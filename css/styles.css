@@ -1,0 +1,1685 @@
+.cabecera-paginas {
+
+  width: 100%; /* Ocupa todo el ancho */
+  height: 520px; /* Altura inicial, ajusta según sea necesario */
+  position: relative; /* Para posicionar el h1 encima */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Asegura que la imagen no se desborde */
+  margin-top: 100px;
+}
+/* 📱 Para móviles (menos de 768px) */
+@media (max-width: 767px) {
+  .cabecera-paginas {
+      margin-top: 50px; /* Ajusta según necesites */
+  }
+}
+
+/* 📲 Para tablets (768px a 1023px) */
+@media (max-width: 1023px) {
+  .cabecera-paginas {
+      margin-top: 70px; /* Ajusta según necesites */
+  }
+}
+
+
+.cabecera-paginas img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute; /* Coloca la imagen debajo del texto */
+  top: 0;
+  left: 0;
+  z-index: 1; /* Asegura que la imagen esté por debajo del texto */
+}
+
+.cabecera-paginas h1 {
+  position: relative; /* Para que el texto se posicione sobre la imagen */
+  z-index: 2; /* Asegura que el texto esté encima de la imagen */
+  color: white; /* Color del texto, ajusta según tu preferencia */
+  text-shadow: 2px 2px 4px #000000; /* Sombra para mejorar la legibilidad sobre la imagen */
+  font-size: 4rem; /* Tamaño inicial grande del texto */
+  font-weight: 300;
+  padding: 20px 20px; /* Agrega algo de padding lateral */
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 1023px) {
+  .cabecera-paginas {
+      height: 400px; /* Máximo 400px de alto para pantallas pequeñas */
+  }
+
+  .cabecera-paginas h1 {
+      font-size: 2rem; /* Tamaño de fuente más pequeño en pantallas menores */
+      font-weight: 150;
+  }
+}
+
+/* AQUI VIENE EN CSS NORMA DE LA OTRA WEB-------------------------------------------------------------------------------*/
+header/* ------------------------------------------------------------------------------------GENERAL .me-------------------------------------------------------------------------*/
+body {
+display: flex;
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+line-height: 1.6;
+overflow-x: hidden;
+box-sizing: border-box;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* ✅ Asegura que padding no afecte el tamaño */
+}
+
+h1 {
+text-align: center;
+}
+
+h2 {
+
+font-weight: 400;
+font-size: 1.9rem;
+}
+.titulos2{
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.9rem;
+}
+@media (max-width: 768px) {
+  .titulos2 {
+    font-size: 1.6rem; /* Ajusta el tamaño según necesites */
+  }
+}
+h3{
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.8rem;
+
+}
+
+html {
+overflow-x: hidden;
+}
+
+body,
+html {
+margin: 0;
+padding: 0;
+}
+
+/*----------------------------Espaciadores del paralax------------------------------------------ */
+@media (min-width: 1024px) {
+.pc-only {
+  display: block;
+  /* Mostrar en PC */
+}
+
+.mobile-only {
+  display: none;
+  /* Ocultar en PC */
+}
+}
+
+header {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+color: #000000;
+padding: 10px 0;
+z-index: 1000;
+background: #fff;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+header.shrink {
+height: 50px; /* Altura reducida al hacer scroll */
+}
+
+div {
+border: none;
+}
+
+p {
+text-align: left;
+/* Alineación a la izquierda */
+padding: 0 10px;
+/* Padding lateral de 10px */
+}
+
+.cursiva {
+font-style: italic;
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+/* Regular */
+}
+
+p {
+font-family: 'Roboto', sans-serif;
+font-weight: 300;
+/* Light */
+}
+
+
+/* Imágenes y elementos embebidos */
+img,
+video,
+iframe {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+/* --------------------------------------------------------------------------------------MENU FIJO PARA PC ----------------------------------------------------------------------*/
+.menu {
+display: flex;
+justify-content: center;
+transition: height 0.3s ease-in-out;
+justify-content: flex-end;
+align-items: center;
+flex-wrap: wrap;
+list-style: none;
+margin: 0;
+padding: 0;
+font-family: 'Roboto', sans-serif;
+font-size: 0.8rem;
+
+}
+
+
+
+
+.menu li {
+margin: 0 30px;
+color: #000000;
+
+}
+
+.menu li a {
+color: rgb(0, 0, 0);
+text-decoration: none;
+}
+
+.menu li a:hover {
+text-decoration: underline;
+color: #4d0ee0b7;
+}
+
+.menu-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+box-sizing: border-box;
+overflow: hidden;
+}
+
+
+.logo {
+transition: transform 0.3s ease-in-out;
+}
+
+.logo.shrink {
+transform: scale(0.7); /* Reduce el tamaño del logo */
+}
+.instagram-link {
+font-size: 18px;
+color: white;
+text-decoration: none;
+}
+
+.instagram-link:hover {
+text-decoration: underline;
+}
+
+/*------------------------------------------------------------------------------SUBMENU INTERIOR PAGINAS CARGA DINAMICA----------------------------------------------------------------------- */
+.submenu .submenu-list {
+display: none;
+position: absolute;
+background: #ffffff;
+padding: 10px 0;
+margin: 0;
+list-style: none;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+z-index: 1000;
+}
+
+.submenu:hover .submenu-list {
+display: block;
+}
+
+.submenu .submenu-list li {
+padding: 5px 20px;
+}
+
+.submenu .submenu-list li a {
+color: #000000;
+text-decoration: none;
+display: block;
+}
+
+.submenu .submenu-list li a:hover {
+background: #f4f4f4;
+color: #770C0C;
+}
+
+/* --------------------------------------------------------------------------------------FIN DEL SUBMENU---------------------------------------------------------------------*/
+.no-link {
+pointer-events: none;
+cursor: default;
+}
+
+.menu-toggle {
+display: none;
+background: none;
+border: none;
+font-size: 24px;
+cursor: pointer;
+color: #000;
+}
+/* --------------------------------------------------------------------------------------POR QUE NOSOTROS WHY-US---------------------------------------------------------------------*/
+
+.why-us {
+max-width: 80%;
+margin: auto;
+background: white;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado */
+.why-us h2 {
+color: #011a01;
+font-size: 1.8em;
+text-align: center;
+}
+
+/* Lista */
+.why-us ul {
+text-align: left;
+padding: 0;
+list-style: none;
+}
+
+/* Elementos de la lista */
+.why-us li {
+margin: 10px 0;
+padding: 10px;
+border-radius: 5px;
+display: flex;
+align-items: center;
+background-color: #e8f5e9; /* Color de fondo para mayor visibilidad */
+}
+
+/* Ícono antes de cada elemento */
+.why-us li::before {
+content: "✅";
+margin-right: 10px;
+font-size: 1.2em;
+}
+
+/* RESPONSIVE */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+.why-us {
+  max-width: 90%;
+  padding: 15px;
+}
+
+.why-us h2 {
+  font-size: 1.6em;
+}
+
+.why-us li {
+  padding: 8px;
+}
+}
+
+/* Móviles */
+@media (max-width: 768px) {
+.why-us {
+  max-width: 95%;
+  padding: 10px;
+}
+
+.why-us h2 {
+  font-size: 1.4em;
+}
+
+.why-us li {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.why-us li::before {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+/* Justificar texto en móviles */
+.why-us p,
+.why-us ul,
+.why-us li {
+  text-align: justify;
+}
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+.why-us {
+  max-width: 100%;
+  padding: 10px;
+  border-radius: 0;
+}
+
+.why-us h2 {
+  font-size: 1.2em;
+}
+
+.why-us li {
+  padding: 6px;
+  font-size: 0.9em;
+}
+
+/* Asegurar que el texto en móviles pequeños siga justificado */
+.why-us p,
+.why-us ul,
+.why-us li {
+  text-align: justify;
+}
+}
+
+
+
+/* ----------------------------------------------------------------------------------------Secciones---------------------------------------------------------------------------- */
+/* Regla global: Ocultar todas las secciones por defecto */
+
+main section {
+display: none;
+/* Asegúrate de que esto sea lo primero */
+min-height: 100vh;
+/* Mantén el espaciado para el diseño */
+}
+
+/* Mostrar solo la sección activa */
+main section.active {
+display: block !important;
+/* Mostrar solo la sección activa */
+}
+
+/* Ocultar todas las secciones que no tienen la clase active */
+main section:not(.active) {
+display: none !important;
+/* Fuerza que estén ocultas */
+}
+
+.active {
+color: #000
+
+}
+
+/*------------------------------------------------------------------------------------------ DIV VISIBLE-MOBILE ----------------------------------------*/
+.visible-mobile {
+display: flex; /* Activa Flexbox */
+flex-direction: column; /* Coloca los elementos en una columna */
+justify-content: flex-end; /* Mueve los elementos hacia el final del div */
+align-items: center; /* Centra horizontalmente los elementos */
+background-size: cover; /* Asegura que el fondo cubra el div */
+background-repeat: no-repeat; /* Evita la repetición del fondo */
+background-position: center; /* Centra la imagen de fondo */
+}
+
+
+.visible-mobile h1 {
+background-color: rgba(0, 0, 0, 0.9);
+color: #ffffff;
+text-align: center;
+font-weight: 200;
+font-size: 1.2rem;
+text-align: center;
+
+}
+
+/* Mostrar solo en pantallas pequeñas (hasta 768px) */
+
+
+/* Estilos para móviles (hasta 768px) */
+@media (max-width: 768px) {
+.visible-mobile {
+  display: block;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 80px;
+  min-height: 200px; /* Mantén el tamaño mínimo */
+}
+
+.visible-mobile-tablet {
+  display: block;
+  background-color: rgba(111, 150, 52, 0.28); /* Verde semitransparente */
+  padding: 10px;
+}
+ /* Estilos para el h1 dentro de visible-mobile-tablet */
+ .visible-mobile-tablet h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 200;
+
+  text-align: center;
+}
+}
+
+/* Estilos para tabletas (entre 769px y 1023px) */
+@media (min-width: 769px) and (max-width: 1023px) {
+  .visible-mobile {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+    min-height: 400px;
+  }
+
+  .visible-mobile h1 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 3.5rem; /* Mantiene un tamaño adecuado */
+    font-weight: 300;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background-color: transparent; /* Evita el fondo negro en tablets */
+  }
+}
+
+
+
+
+/* Ocultar en pantallas grandes (1024px en adelante) */
+@media (min-width: 1024px) {
+.visible-mobile,
+.visible-mobile-tablet {
+  display: none !important;
+}
+}
+
+
+
+
+.pagina-inicio {
+  background-image: url('/images/fondo-inico-ayurveda.webp');
+}
+
+.pagina-alipres {
+  background-image: url('/images/alimentacion-ayurveda-5-de-abril1.webp');
+}
+
+.pagina-alion {
+  background-image: url('/images/alimentacion-ayurveda-5-de-abril.webp');
+}
+
+.pagina-masaje {
+  background-image: url('/images/pagina-masaje-movil.webp');
+}
+ 
+.pagina-masajeyalilmentacion {
+  background-image: url('/images/alimentacion-ayurveda-5-de-abril.webp');
+}
+
+
+.overlay {
+position: absolute; /* Posiciona el overlay relativo al contenedor */
+top: 0;
+left: 0;
+width: 100%;
+height: 100%; /* Cubre todo el contenedor */
+background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+display: flex; /* Centra contenido dentro del overlay */
+align-items: center; /* Centrado vertical */
+justify-content: center; /* Centrado horizontal */
+color: white; /* Color del texto */
+font-size: 1.5rem; /* Tamaño de fuente del texto */
+text-align: center;
+}
+
+/*-----------------------------------------TODO PARALAX-----------------------------------------*/
+/* ********************************************************************************
+ * Estilos para .parallax con el mismo comportamiento que .cabecera-paginas
+ ******************************************************************************** */
+
+ .parallax {
+  position: relative;
+  width: 100%;
+  height: 720px; /* Altura estándar en escritorio */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* 🔥 CENTRA TODO VERTICALMENTE */
+  background-size: cover; /* La imagen cubre todo el div */
+  background-position: center bottom; /* Centra y muestra más abajo */
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Mantiene el efecto parallax en escritorio */
+  margin-top: 100px; /* Espaciado igual que .cabecera-paginas */
+}
+
+/* 📱 Para móviles (menos de 768px) */
+@media (max-width: 767px) {
+  .parallax {
+    margin-top: 50px !important;
+    height: 400px !important; /* Ajusta la altura */
+    background-size: cover !important;
+    background-position: center bottom !important; /* Muestra más la parte inferior */
+    background-attachment: scroll !important;
+    display: flex;
+    align-items: center !important; /* 🔥 CENTRA EL CONTENIDO */
+  }
+  .parallax .titulo {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+  }
+
+
+}
+
+/* 📲 Para tablets (768px a 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .parallax {
+    margin-top: 70px;
+    height: 600px !important; /* 🔥 MISMA ALTURA QUE EN MÓVIL */
+    background-size: cover !important;
+    background-position: center bottom !important;
+    display: flex;
+    align-items: center !important; /* 🔥 CENTRA EL CONTENIDO */
+  }
+
+  .parallax .titulo {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+  }
+  .parallax .titulo h1 {
+    position: relative !important; /* ❌ Quita absolute */
+    font-size: 2.5rem !important;
+    font-weight: 250 !important;
+
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ✅ Estilos generales del título */
+.parallax .titulo h1 {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 4rem ;
+  font-weight: 300;
+  text-align: center;
+  padding: 20px 20px;
+  margin: auto;
+}
+
+/* 📲 Ajuste final para tablets y móviles */
+@media (max-width: 1023px) {
+ 
+    .parallax .titulo {
+      background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    }
+    
+  
+
+  .parallax .titulo h1 {
+    padding: 25px !important;
+    font-size: 1.8rem !important; /* ✅ Mantiene el tamaño de texto */
+    font-weight: 150 !important; /* ✅ Mantiene el peso de la fuente */
+    text-align: center !important; /* ✅ Mantiene el centrado */
+  
+  }
+}
+
+/*--------------------------------------------------------------------------------------- Divs de contenido ---------------------------------------------------------------*/
+.contenedor {
+margin: 0 auto;
+padding: 0;
+box-sizing: border-box;
+}
+
+.content {
+display: flex;
+flex-direction: column;
+text-align: center;
+/* Padding lateral de 10px */
+}
+
+.content p {
+text-align: justify;
+}
+
+
+.dynamic-content .content {
+align-items: center;
+background: white;
+padding: 20px;
+border-radius: 10px;
+
+}
+
+/* Responsivo: en móviles usa 90% en lugar de 60% */
+
+
+
+
+/* --------------------------------------------------------------------------------------- Divs de contenido --------------------------------------------------------------- */
+
+/* Contenedor de texto */
+.contenedor {
+margin: 0 auto;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+
+.content div {
+background: #fff;
+text-align: center;
+padding: 10px 10px 10px 10px; /* Padding de los textos */
+}
+
+
+@media (max-width: 768px) {
+  .dynamic-content .content {
+    align-items: center;
+    background: white;
+    padding: 0px;
+    border-radius: 10px;
+    width: calc(100% - 20px); /* ✅ Se mantiene el margen en móviles */
+    margin: 0 auto;
+  }
+}
+
+
+/* -----------------------------------------------------------------------------------TITULOS Y SUBTITULOS------------------------------------------------------------ */
+.inicio-title {
+background-color: rgba(79, 44, 10, 0.7);
+color: white;
+padding: 10px;
+text-align: center;
+margin: 0 auto;
+width: 99%;
+}
+
+.h2-title {
+background-color: #E6D9D9C2;
+color: #770C0C;
+padding: 20px;
+border-radius: 10px;
+font-size: 1.5rem;
+text-align: center;
+width: 100%;
+}
+
+.titulo {
+background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+color: #ffff;
+text-align: center;
+width: 100%;
+padding: 5px;
+margin: 0 auto;
+/* Centrar y evitar desbordamiento */
+line-height: 1;
+display: block;
+/* Cambiar a block para un comportamiento más predecible */
+font-family: 'Roboto', sans-serif;
+box-sizing: border-box;
+/* Incluye padding y border en el ancho total */
+}
+
+
+
+.sanscrito {
+background-color: #E6D9D9C2;
+color: #770C0C;
+border-radius: 0px;
+font-size: 1rem;
+text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+
+}
+
+.sanscrito h3,
+p {
+font-size: 1rem;
+/* Reduce el tamaño de fuente */
+line-height: 1.4rem;
+/* Ajusta el espacio entre líneas */
+color: #000;
+/* Asegura buen contraste */
+padding: 10px;
+/* Mantén el espacio interno */
+text-align: center;
+/* Centra el texto */
+}
+
+/* Pie de página */
+footer {
+background: #333;
+color: white;
+text-align: center;
+padding: 60px 40px 0px 40px;
+box-sizing: border-box;
+margin-top: 90px;
+}
+
+/*------------------------------------------------------------------------------------- RESPONSIVE MÓVIL Y TABLET----------------------------------------------------------- */
+@media (max-width: 1023px) {
+main section {
+  display: none !important;
+  /* Forzar ocultar todas en móvil */
+}
+
+main section.active {
+  display: block !important;
+  /* Forzar mostrar solo la activa */
+}
+}
+@media (max-width: 1023px) {
+  /* Estilos para móviles y tabletas */
+  
+  .menu-container.pc-menu {
+    display: none;
+  }
+  
+  .sanscrito p {
+    font-size: 1rem;
+    /* Reducir el tamaño del texto para el párrafo */
+    padding: 10px;
+    /* Espacio de 20px alrededor del contenido dentro del <div> */
+  }
+  
+  .sanscrito h3 {
+    font-size: 1rem;
+    /* Reduce el tamaño de fuente */
+    line-height: 1.4rem;
+    /* Ajusta el espacio entre líneas */
+    color: #000;
+    /* Asegura buen contraste */
+    padding: 10px;
+    /* Mantén el espacio interno */
+    text-align: center;
+    /* Centra el texto */
+  }
+  
+  .menu-container.mobile-menu {
+    display: flex;
+    align-items: center; /* Asegura alineación en línea */
+    justify-content: space-between; /* Distribuye los elementos */
+    padding: 10px 20px;
+  }
+  
+  .menu-container.mobile-menu .logo {
+    flex-grow: 1; /* Hace que ocupe espacio para centrarse */
+    display: flex;
+    justify-content: center; /* Centra el logo */
+    align-items: center;
+  }
+  
+  .menu-container.mobile-menu .logo img {
+    max-width: 80px; /* Ajusta el tamaño del logo */
+    height: auto;
+  }
+  
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-container.mobile-menu .menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background: #fff;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-container.mobile-menu .menu.active {
+    display: flex;
+  }
+  
+  .menu-container.pc-menu {
+    display: none;
+  }
+  
+  .menu-container.mobile-menu {
+    display: flex;
+  }
+  }
+  
+/* Responsividad para del menu PC */
+@media (min-width: 1024px) {
+.menu-container.pc-menu {
+  display: flex;
+}
+
+.menu-container.mobile-menu {
+  display: none;
+}
+
+body {
+  padding: 0 40px;
+}
+
+header {
+  width: calc(100% - 80px);
+  margin: 0 40px;
+  padding: 10px 0;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.menu-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+ width: auto; 
+  /* Espacio extra a izquierda y derecha */
+  background-color: #fff;
+ 
+}
+
+.content {
+  max-width: 100%;
+  margin: 0 auto;
+}
+}
+
+
+/* Espaciadores específicos para dispositivos */
+.pc-only {
+display: block;
+/* Visible en escritorio */
+}
+
+.mobile-only {
+display: none;
+/* Oculto por defecto */
+}
+
+/*----------------------------------------------------* ESTILOS PARA LAS TABLAS DE ASIGNATURAS Y FECHAS------------------------------------- */
+.modulos-table {
+width: 80%;
+margin: 20px auto;
+border-collapse: collapse;
+text-align: center;
+border: 1px solid #000;
+/* Borde de la tabla */
+}
+
+.modulos-table th,
+.modulos-table td {
+padding: 8px;
+border: 1px solid #000;
+/* Borde de las celdas */
+}
+
+.modulos-table th {
+background-color: #f2f2f2;
+/* Fondo del encabezado */
+font-weight: bold;
+/* Texto en negrita */
+}
+
+/*----------------------------------------------------* REGLAS VISIBILIDAD PARA DISPOSITIVOS MOVILES Y TABLETS------------------------------------- */
+@media (max-width: 1024px) {
+.pc-only {
+  display: none;
+  /* Ocultar en móvil y tablet */
+}
+
+.mobile-only {
+  display: block;
+  /* Mostrar en móvil y tablet */
+}
+
+#section3 details p {
+  margin-top: 5px;
+  /* Espaciado solo para párrafos dentro de <details> */
+  line-height: 1.5;
+  /* Mejora la legibilidad */
+}
+}
+
+/* ------------------------------------------------Adaptación DEL SUBMENU NARANJA para móvil y tablet */
+/* 🔹 SOLO PARA TABLETS (mantener enlaces en fila) */
+@media (max-width: 1024px) {
+.sections {
+  display: flex;
+  flex-wrap: wrap; /* Evita que los enlaces se apilen innecesariamente */
+  justify-content: center; /* Asegura que los enlaces estén centrados */
+  padding: 10px 20px; /* Mantiene padding pero sin afectar alineación */
+  margin-top: 20px;
+}
+
+.sections a {
+  margin: 5px; /* Espaciado uniforme */
+  font-size: 16px;
+}
+}
+
+/* 🔹 SOLO PARA MÓVILES (alinear en columna) */
+@media (max-width: 768px) {
+.sections {
+  flex-direction: column !important; /* Forzar los enlaces en columna */
+  align-items: center !important;
+  padding: 0;
+  width: 98%;
+  margin-top: 40px !important; /* ✅ Reduce el margen superior solo en móviles */
+  margin-bottom: 40px !important;
+}
+
+.sections a {
+  width: 100% !important; /* Ocupar todo el ancho disponible */
+  max-width: 380px; /* Limitar el ancho máximo */
+  text-align: center;
+  margin: 10px 0; /* Espaciado uniforme */
+}
+}
+
+
+
+/* ----------------------------------------------------------------------------------INICO DEL CSS DE LAS SECCIONES HMTL OCULTAS------------------------------- */
+
+
+/* Estilos generales de las secciones de navegacion interna */
+.sections {
+display: flex;
+flex-wrap: wrap; /* Permite que los elementos se ajusten en caso de falta de espacio */
+justify-content: center; /* Centra los enlaces horizontalmente */
+align-items: center; /* Centra verticalmente */
+font-family: 'Roboto', sans-serif;
+padding: 20px; /* Espaciado */
+background-color: #FFF;
+margin-top: 80px; /* Espacio superior */
+gap: 15px; /* Espaciado uniforme entre enlaces */
+width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.sections a {
+display: inline-block; /* Asegura que los enlaces se comporten como bloques */
+text-align: center;
+padding: 10px 20px; /* Ajustar padding para mejor diseño */
+background-color: #9e9a96;
+cursor: pointer;
+text-decoration: none;
+color: #110000;
+border-radius: 5px; /* Bordes redondeados */
+transition: background 0.3s ease;
+min-width: 140px; /* Para que no se compriman demasiado */
+}
+
+.sections a:hover {
+background-color: #d85b0c; /* Efecto hover */
+}
+
+.sections a.active {
+background-color: #ffffff; /* Fondo blanco */
+color: #000000; /* Texto negro */
+
+}
+
+
+/* Secciones individuales */
+#section1,
+#section2,
+#section3,
+#section4 {
+text-align: left; /* Alinea el contenido a la izquierda */
+padding: 10px; /* Espaciado interno reducido */
+background-color: #ffffff; /* Fondo blanco */
+border: none; /* Sin bordes */
+color: #333; /* Color del texto */
+width: calc(100% - 20px); /* Ocupa todo el ancho menos 20px */
+margin: 0 auto; /* Centra la sección horizontalmente */
+box-sizing: border-box; /* Asegura que padding y borde no aumenten el ancho total */
+}
+
+/* Estilos comunes para párrafos */
+#section1 p,
+#section2 p,
+#section3 p,
+#section4 p {
+color: #333;
+}
+
+#section3 p {
+color: #333; /* Color común para todos los párrafos */
+}
+
+/* Estilos para los elementos <details> */
+#section2 details,
+#section3 details {
+margin-bottom: 10px; /* Espacio entre cada desplegable */
+}
+
+#section2 summary,
+#section3 summary {
+font-weight:300;
+font-size: 1.4rem;
+color: #8c4c0c;
+cursor: pointer;
+display: inline-flex; /* Coloca el texto y la flecha en línea */
+align-items: center; /* Alinea verticalmente */
+padding: 5px 0; /* Espaciado interno */
+list-style: none; /* Elimina cualquier viñeta */
+}
+
+/* Flecha en los detalles */
+#section2 summary::after,
+#section3 summary::after {
+content: "➤";
+font-size: 14px; /* Tamaño ajustado */
+margin-left: 5px; /* Espacio entre el texto y la flecha */
+transition: transform 0.2s ease; /* Animación suave */
+}
+
+#section2 details[open] summary::after,
+#section3 details[open] summary::after {
+transform: rotate(90deg); /* Gira la flecha cuando está abierto */
+}
+
+/* Párrafos dentro de <details> */
+#section3 details p {
+margin-top: 5px; /* Espaciado solo para párrafos dentro de <details> */
+padding-left: 30px; /* Padding izquierdo para párrafos dentro de <details> */
+line-height: 1.5; /* Mejora la legibilidad */
+}
+.section1 h2, .section1 h3,
+.section2 h2, .section2 h3,
+.section3 h2, .section3 h3,
+.section4 h2, .section4 h3 {
+  text-align: left !important; /* Alinea el texto a la izquierda */
+  margin-left: 0; /* Elimina márgenes izquierdos */
+}
+
+/* -------------------------Adaptaciones para dispositivos móviles y tabletas del secciones interiore y tablas--------------------------------- */
+@media (max-width: 1024px) {
+
+#section1,
+#section2,
+#section3,
+#section4 {
+  text-align: left;
+  /* Alinea el contenido a la izquierda */
+  padding: 10px;
+  /* Espaciado interno reducido */
+  background-color: #ffffff;
+  /* Fondo blanco */
+  border: none;
+  /* Sin bordes */
+  color: #333;
+  /* Color del texto */
+  width: auto;
+  /* Ocupa todo el ancho menos 20px (10px de margen a cada lado) */
+  margin: 0 auto;
+  /* Centra la sección horizontalmente */
+  box-sizing: border-box;
+  /* Asegura que padding y borde no aumenten el ancho total */
+}
+
+#section1 details p,
+#section2 details p,
+#section3 details p,
+#section4 details p {
+  margin-top: 5px;
+  /* Espaciado solo para párrafos dentro de <details> */
+  padding-left: 0px;
+  /* Padding izquierdo para párrafos dentro de <details> */
+  line-height: 1.5;
+  /* Mejora la legibilidad */
+}
+
+.modulos-table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+  border: 1px solid #000;
+  /* Borde de la tabla */
+}
+
+details p {
+  color: #333333;
+  /* Cambia esto por el color que prefieras */
+}
+
+details p {
+  color: #333333;
+  /* Color para los párrafos dentro de <details> */
+}
+
+details summary {
+  color: #b3390d;
+  /* Color para el contenido dentro de <summary> */
+}
+}
+
+/* Clases de visibilidad */
+.hidden {
+display: none;
+}
+
+.visible {
+display: block;
+}
+
+/* Alineaciones de texto */
+.align-left {
+text-align: left;
+
+}
+.texto-centrado {
+text-align: center;
+}
+
+
+/* ----------------------------------------------------------------------------------FIN DEL  CSS DE LAS SECCIONES HMTL OCULTAS----------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------FORMULARIO PHP---------------------------------------------- */
+
+/* Contenedor principal */
+.form-container {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+background-color: #f9f9f9;
+}
+/* Estilo del formulario */
+#form-ayurveda {
+width: 100%;
+max-width: 600px;
+background: white;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+font-family: 'Arial', sans-serif;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Efecto flotante */
+#form-ayurveda:hover {
+transform: translateY(-5px);
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Título del formulario */
+.form-title {
+font-size: 1.8rem;
+color: #2c3e50;
+margin-bottom: 1.5rem;
+text-align: center;
+}
+/* Grupos de campos */
+.form-group {
+margin-bottom: 1.5rem;
+}
+.form-group label {
+display: block;
+font-size: 1rem;
+color: #34495e;
+margin-bottom: 0.5rem;
+font-weight: 600;
+}
+.form-group input {
+width: 100%;
+padding: 0.8rem;
+border: 1px solid #ddd;
+border-radius: 8px;
+font-size: 1rem;
+transition: border-color 0.3s ease;
+}
+.form-group input:focus {
+border-color: #3498db;
+outline: none;
+}
+/* Checkboxes normales */
+.checkbox-group {
+display: flex;
+flex-direction: column; /* Una debajo de la otra */
+gap: 0.5rem; /* Espacio entre cada checkbox */
+}
+/* Estilo para los labels de los checkboxes */
+.checkbox-label {
+display: flex;
+align-items: center; /* Alinea verticalmente el checkbox y el texto */
+font-size: 1rem;
+color: #34495e;
+cursor: pointer;
+margin-bottom: 0.5rem; /* Espacio entre cada checkbox */
+}
+/* Estilo básico para checkboxes nativos */
+.checkbox-label input[type="checkbox"] {
+width: 16px;
+height: 16px;
+margin-right: 0.5rem; /* Espacio entre el checkbox y el texto */
+accent-color: #3498db; /* Cambia el color del checkbox */
+}
+/* Botón de envío */
+.submit-btn {
+width: 100%;
+padding: 1rem;
+background: #3498db;
+color: white;
+border: none;
+border-radius: 8px;
+font-size: 1rem;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+background: #2980b9;
+}
+
+/* Animación de entrada */
+.form-container {
+animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(-20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+.form-group input {
+  width: 100%;
+}
+
+.checkbox-group {
+  align-items: flex-start;
+}
+}
+/* ----------------------------------------------------------------------------------FIN DEL FORMULARIO---------------------------------------------- */
+
+/* ----------------------------------------------------------------------------------CARUSSEL ALUMNOS----------------------------------------------- */
+/* Carrusel */
+.carousel {
+max-width: 600px;
+margin: auto; /* Centrar el carrusel */
+overflow: hidden; /* Ocultar contenido desbordado */
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+position: relative; /* Posicionamiento relativo para controles */
+padding-top: 40px;
+}
+.carousel-inner {
+display: flex; /* Alineación en fila */
+transition: transform 0.5s ease-in-out; /* Suavizar movimiento */
+width: 100%; /* Asegura que ocupe todo el ancho del carrusel */
+}
+.carousel-item {
+flex: 0 0 100%; /* Cada diapositiva ocupa el 100% del contenedor */
+display: flex;
+flex-direction: column; /* Elementos en columna: imagen y texto */
+justify-content: center; /* Centrar verticalmente */
+align-items: center; /* Centrar horizontalmente */
+text-align: center; /* Centrar texto */
+opacity: 0; /* Ocultar inicialmente */
+transition: opacity 0.5s ease-in-out; /* Transición de opacidad */
+}
+.carousel-item.active {
+opacity: 1; /* Sólo mostrar la diapositiva activa */
+}
+.carousel-item img {
+width: 150px; /* Tamaño de la imagen */
+height: 150px; /* Tamaño de la imagen */
+object-fit: cover; /* Mantener proporción de la imagen */
+border-radius: 50%; /* Hacer la imagen circular */
+margin-bottom: 15px; /* Espaciado entre imagen y texto */
+}
+.carousel-item p {
+margin: 0 auto; /* Centra el texto horizontalmente */
+padding: 0; /* Elimina cualquier padding interno */
+max-width: 95%; /* Limita el ancho del texto */
+word-wrap: break-word; /* Permite cortar palabras largas */
+text-align: justify; /* Mantén el texto justificado */
+}
+
+/* Controles del carrusel */
+.carousel-control {
+background: rgba(0, 0, 0, 0.5);
+color: white;
+border: none;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: background 0.3s;
+}
+
+.carousel-control:hover {
+background: rgba(0, 0, 0, 0.8);
+}
+
+/* -----------------------------------------------------Adaptaciones para dispositivos móviles y tabletas del carousel--------------------------------- */
+@media (max-width: 1024px) {
+.carousel {
+  max-width: 90%; /* Ocupa el 90% del ancho del contenedor */
+  margin: auto; /* Centrar el carrusel */
+  text-align: center;
+}
+.carousel-item img {
+  width: 120px; /* Tamaño más pequeño para imágenes */
+  height: 120px;
+}
+.carousel-item p {
+  font-size: 16px; /* Texto más pequeño para móviles */
+
+  text-align: justify; /* Mantén el texto justificado */
+}
+.carousel-item {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  
+}
+.carousel-inner {
+  align-items: center; /* Centra los elementos */
+
+}
+}
+/*------------------------------- MEDIA CAROUSEL PARA MOVILES Y TABLETS---------------------------------- */
+@media (max-width: 768px) 
+{
+.carousel-item img {
+  width: 100px; /* Imágenes aún más pequeñas */
+  height: 100px;
+}
+.carousel-item p {
+  font-size: 12px; /* Texto aún más pequeño */
+}
+}
+
+/*REDES SOCIALES*/
+.social-share {
+text-align: center;
+padding: 15px;
+background-color: #f9f9f9;
+border-radius: 8px;
+font-family: Arial, sans-serif;
+}
+
+.social-share p {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.social-share a {
+display: inline-block;
+margin: 5px;
+padding: 10px 15px;
+border-radius: 5px;
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+.whatsapp { background-color: #25D366; }
+.telegram { background-color: #0088cc; }
+.twitter { background-color: #1DA1F2; }
+.facebook { background-color: #3b5998; }
+
+.whatsapp:hover, .telegram:hover, .twitter:hover, .facebook:hover {
+opacity: 0.8;
+}
+/* Estilos para los botones con data-target */
+.button[data-target="masaje-ayurveda"] {
+  background-color: #e06c0e; /* Naranja */
+  margin-top: 10px;
+}
+.button[data-target="masaje-ayurveda"]:hover {
+  background-color: #c65a00; /* Naranja más oscuro */
+  
+
+}
+
+.button[data-target="alimentacion-ayurveda"] {
+  background-color: #28a745; /* Verde */
+  margin-top: 10px;
+}
+.button[data-target="alimentacion-ayurveda"]:hover {
+  background-color: #218838; /* Verde más oscuro */
+}
+
+.button[data-target="alimentacion-y-masaje-ayurveda"] {
+  background-color: #007bff; /* Azul */
+  margin-top: 10px;
+}
+.button[data-target="alimentacion-y-masaje-ayurveda"]:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+}
+
+.button[data-target="ayurveda-online"] {
+  margin-top: 10px;
+  background-color: #ff6347; /* Rojo */
+}
+.button[data-target="ayurveda-online"]:hover {
+  background-color: #e03e2d; /* Rojo más oscuro */
+}
+
+
+/* -------------------------------------------------------------------------------------two by two*------------------------------------------------------------/
+/* Contenedor general */
+/* ----------------------- ESTILOS GENERALES ----------------------- */
+.two-by-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas por defecto */
+  gap: 40px; /* Espaciado entre los divs */
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+  width: 100%;
+  max-width: 60%; /* En PC y tablet se limita al 60% */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.box img {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ----------------------- PC (1024px en adelante) ----------------------- */
+/* Mantiene 2 columnas y el tamaño actual de las imágenes */
+@media (min-width: 1024px) {
+  .two-by-two {
+    grid-template-columns: repeat(2, 1fr); /* Se mantiene en 2 columnas */
+  }
+
+  .box img {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+/* ----------------------- Tablets (768px - 1023px) ----------------------- */
+/* Se mantienen 2 columnas pero SIN borde */
+@media (min-width: 768px) and (max-width: 1700px) {
+  .two-by-two {
+    grid-template-columns: 1fr; /* Mantiene 2 columnas */
+    
+      max-width: 80% !important; /* ✅ Mantiene el 60% de ancho */
+      width: 80% !important;
+      margin: 0 auto !important; /* ✅ Centra el contenedor con 20% de margen a cada lado */
+    
+  }
+
+  .box {
+    border: none; /* 🔥 Quita el borde */
+  }
+}
+
+/* ----------------------- Móviles grandes (601px - 767px) ----------------------- */
+/* Se mantiene 2 columnas pero SIN borde */
+@media (min-width: 601px) and (max-width: 767px) {
+  .two-by-two {
+    grid-template-columns: 1fr; /* Mantiene 2 columnas */
+  }
+
+  .box {
+    border: none; /* 🔥 Quita el borde */
+  }
+
+  .box img {
+    width: calc(100% - 0px); /* ✅ Deja 10px de margen a cada lado */
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* ----------------------- Móviles pequeños (600px o menos) ----------------------- */
+/* Se cambia a 1 sola columna, con borde naranja y margen de 10px */
+@media (max-width: 600px) {
+  .two-by-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 20px); /* 🔥 Deja 10px de margen a cada lado */
+    max-width: 100%;
+  }
+
+  .box {
+   
+    width: calc(100% - 20px); /* 🔥 Deja 10px de margen a cada lado */
+    max-width: 100%;
+    margin: 0 auto; /* Centra el div */
+    padding: 20px;
+  }
+
+  .box img {
+    width: calc(100% - 20px); /* 🔥 La imagen también deja 10px de margen a los lados */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* ----------------------- HOVER ----------------------- */
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* ----------------------- ESPACIADO ENTRE ELEMENTOS ----------------------- */
+.spacing {
+  height: 1.25rem;
+}
+
+/* ----------------------- ESTILOS DE TEXTO ----------------------- */
+.box h2 {
+  font-family: 'Lora', cursive;
+  font-size: 18px;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .box h2 {
+    font-size: 0.875rem; /* Aproximadamente 14px */
+  }
+}
+.highlight {
+  font-weight: bold;
+  color: #e06c0e;
+}
+
+/* ----------------------- BOTONES ----------------------- */
+.button {
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-1 { background-color: #e06c0e; }
+.button-1:hover { background-color: #c65a00; }
+
+.button-2 { background-color: #28a745; }
+.button-2:hover { background-color: #218838; }
+
+.button-3 { background-color: #007bff; }
+.button-3:hover { background-color: #0056b3; }
+
+.button-4 { background-color: #ff6347; }
+.button-4:hover { background-color: #e03e2d; }
+
+/* ----------------------- BOTONES ----------------------- */
+.whatsapp-button {
+  background-color: #25D366;
+}
+
+/* Botón de Llamada */
+.call-button {
+  background-color: #34B7F1;
+}
+
+/* Icono dentro del botón */
+.floating-buttons a span {
+  font-size: 20px;
+}
+
+/* Efecto al pasar el mouse */
+.floating-buttons a:hover {
+  transform: scale(1.1);
+}
+
+/* Mostrar solo en móviles */
+@media (min-width: 1024px) {
+  .floating-buttons {
+      display: none;
+  }
+}

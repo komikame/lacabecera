@@ -1,0 +1,70 @@
+<div class="cabecera-paginas">
+  <img id="cabecera-img" src="/images/alimentos-frescos-ayurveda.webp" alt="Cabecera">
+  <h1>Diploma de Alimentación Ayurveda</h1>
+</div>
+
+
+<!-- Espaciador más ancho para móvil y tablet (antes del H1) -->
+<div class="spacer-mobile mobile-only" style="height: 100px;"></div>
+
+<!-- Título -->
+<div class="titulo">
+  <h1>contacto</h1>
+</div>
+<!-- Espaciador más estrecho para móvil y tablet (después del H1) -->
+<div class="spacer-mobile mobile-only" style="height: 20px;"></div>
+<!-- Espaciador para PC -->
+<div class="spacer pc-only" style="height: 30px"></div>
+<!-- Contenido adicional -->
+<div class="spacer" style="height: 200px"></div>
+<!-- Espaciador ajustable -->
+<!-- Fin de  Parallax de Inicio -->
+<div class="content">
+  <div class="form-container">
+    <h2>Formulario de Contacto</h2>
+    <form action="procesar_formulario.php" method="POST">
+      <div class="form-group">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+      </div>
+      <div class="form-group">
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="curso">Selecciona los cursos:</label>
+        <select id="curso" name="curso[]" multiple required>
+          <option value="Curso de Ayurveda">Curso de Ayurveda</option>
+          <option value="Terapia Ayurveda">Terapia Ayurveda</option>
+          <option value="Masajes Ayurvédicos">Masajes Ayurvédicos</option>
+          <option value="Meditación y Yoga">Meditación y Yoga</option>
+        </select>
+        <small>Usa Ctrl o Cmd para seleccionar múltiples opciones.</small>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Enviar</button>
+    </form>
+  </div>
+</div>
+<div class="floating-buttons">
+  <!-- Botón de WhatsApp -->
+  <a href="https://wa.me/34XXXXXXXXX" class="whatsapp-button" target="_blank">
+    <span>📩</span> Chatear por WhatsApp
+  </a>
+
+  <!-- Botón de Llamada -->
+  <a href="tel:+34XXXXXXXXX" class="call-button">
+    <span>📞</span> Llamar ahora
+  </a>
+</div>
