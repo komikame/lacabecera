@@ -1,70 +1,160 @@
-<div class="cabecera-paginas">
-  <img id="cabecera-img" src="/images/alimentos-frescos-ayurveda.webp" alt="Cabecera">
-  <h1>Diploma de Alimentación Ayurveda</h1>
-</div>
 
 
-<!-- Espaciador más ancho para móvil y tablet (antes del H1) -->
-<div class="spacer-mobile mobile-only" style="height: 100px;"></div>
 
-<!-- Título -->
-<div class="titulo">
-  <h1>contacto</h1>
-</div>
-<!-- Espaciador más estrecho para móvil y tablet (después del H1) -->
-<div class="spacer-mobile mobile-only" style="height: 20px;"></div>
-<!-- Espaciador para PC -->
-<div class="spacer pc-only" style="height: 30px"></div>
-<!-- Contenido adicional -->
-<div class="spacer" style="height: 200px"></div>
-<!-- Espaciador ajustable -->
-<!-- Fin de  Parallax de Inicio -->
-<div class="content">
-  <div class="form-container">
-    <h2>Formulario de Contacto</h2>
-    <form action="procesar_formulario.php" method="POST">
-      <div class="form-group">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-      </div>
-      <div class="form-group">
-        <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos" name="apellidos" required>
-      </div>
-      <div class="form-group">
-        <label for="telefono">Teléfono:</label>
-        <input type="text" id="telefono" name="telefono" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="curso">Selecciona los cursos:</label>
-        <select id="curso" name="curso[]" multiple required>
-          <option value="Curso de Ayurveda">Curso de Ayurveda</option>
-          <option value="Terapia Ayurveda">Terapia Ayurveda</option>
-          <option value="Masajes Ayurvédicos">Masajes Ayurvédicos</option>
-          <option value="Meditación y Yoga">Meditación y Yoga</option>
-        </select>
-        <small>Usa Ctrl o Cmd para seleccionar múltiples opciones.</small>
-      </div>
-      <div class="form-group">
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
-      </div>
-      <button type="submit" class="submit-btn">Enviar</button>
-    </form>
-  </div>
-</div>
-<div class="floating-buttons">
-  <!-- Botón de WhatsApp -->
-  <a href="https://wa.me/34XXXXXXXXX" class="whatsapp-button" target="_blank">
-    <span>📩</span> Chatear por WhatsApp
-  </a>
 
-  <!-- Botón de Llamada -->
-  <a href="tel:+34XXXXXXXXX" class="call-button">
-    <span>📞</span> Llamar ahora
-  </a>
-</div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Ayurveda</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Menú fijo -->
+    <header>
+      <nav>
+        <!-- Menú para PC -->
+        <div class="menu-container pc-menu">
+          <li><img src="/images/alaya-logo-ayurveda-tradicional-1.webp" alt="MiLogo" class="logo" id="logo"></li>
+    
+          <!-- Menú principal -->
+          <ul class="menu">
+            <li><a href="/index.html">INICIO</a></li>
+            <li class="submenu">
+              <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
+              <ul class="submenu-list">
+                <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
+                <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
+                <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
+              </ul>
+            </li>
+            <li><a href="/ayurveda-online.html">FORMACIÓN ONLINE</a></li>
+            <li><a href="/difusion.html">DIFUSIÓN</a></li>
+            <li><a href="/contacto.html">CONTACTO</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/instagram.html">Instagram</a></li>
+          </ul>
+        </div>
+    
+        <!-- Menú para móvil -->
+        <div class="menu-container mobile-menu">
+          <!-- Botón de toggle -->
+          <button class="menu-toggle" aria-label="Abrir menú">
+            ☰
+          </button>
+          <!-- Menú principal para móvil -->
+          <ul class="menu">
+            <li><a href="/index.html">INICIO</a></li>
+            <li class="mobile-submenu">
+              <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
+              <ul class="submenu-listmovil">
+                <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
+                <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
+                <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
+              </ul>
+            </li>
+            <li><a href="/ayurveda-online.html">FORMACIÓN ONLINE</a></li>
+            <li><a href="/difusion.html">DIFUSIÓN</a></li>
+            <li><a href="/contacto.html">CONTACTO</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+          </ul>
+        </div>
+    </nav>
+    </header>
+    
+    
+
+    <!-- Contenido de la página -->
+    <main>
+      <div class="cabecera-paginas">
+        <img id="cabecera-img" src="/images/alimentos-frescos-ayurveda.webp" alt="Cabecera">
+        <h1>Diploma de Alimentación Ayurveda</h1>
+      </div>
+      
+      
+      <!-- Espaciador más ancho para móvil y tablet (antes del H1) -->
+      <div class="spacer-mobile mobile-only" style="height: 100px;"></div>
+      
+      <!-- Título -->
+      <div class="titulo">
+        <h1>contacto</h1>
+      </div>
+      <!-- Espaciador más estrecho para móvil y tablet (después del H1) -->
+      <div class="spacer-mobile mobile-only" style="height: 20px;"></div>
+      <!-- Espaciador para PC -->
+      <div class="spacer pc-only" style="height: 30px"></div>
+      <!-- Contenido adicional -->
+      <div class="spacer" style="height: 200px"></div>
+      <!-- Espaciador ajustable -->
+      <!-- Fin de  Parallax de Inicio -->
+      <div class="content">
+        <div class="form-container">
+          <h2>Formulario de Contacto</h2>
+          <form action="procesar_formulario.php" method="POST">
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+              <label for="apellidos">Apellidos:</label>
+              <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono:</label>
+              <input type="text" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="curso">Selecciona los cursos:</label>
+              <select id="curso" name="curso[]" multiple required>
+                <option value="Curso de Ayurveda">Curso de Ayurveda</option>
+                <option value="Terapia Ayurveda">Terapia Ayurveda</option>
+                <option value="Masajes Ayurvédicos">Masajes Ayurvédicos</option>
+                <option value="Meditación y Yoga">Meditación y Yoga</option>
+              </select>
+              <small>Usa Ctrl o Cmd para seleccionar múltiples opciones.</small>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje:</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar</button>
+          </form>
+        </div>
+      </div>
+      <div class="floating-buttons">
+        <!-- Botón de WhatsApp -->
+        <a href="https://wa.me/34XXXXXXXXX" class="whatsapp-button" target="_blank">
+          <span>📩</span> Chatear por WhatsApp
+        </a>
+      
+        <!-- Botón de Llamada -->
+        <a href="tel:+34XXXXXXXXX" class="call-button">
+          <span>📞</span> Llamar ahora
+        </a>
+      </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>

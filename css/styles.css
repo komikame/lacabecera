@@ -933,6 +933,51 @@ display: none;
 /* Oculto por defecto */
 }
 
+
+/* Estilos para el submenú en móvil */
+.mobile-submenu .submenu-listmovil {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 100%;
+}
+
+.mobile-submenu:hover .submenu-listmovil {
+  display: block;
+}
+
+.mobile-submenu .submenu-listmovil li {
+  padding: 5px 20px;
+}
+
+.mobile-submenu .submenu-listmovil li a {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+}
+
+.mobile-submenu .submenu-listmovil li a:hover {
+  background: #f4f4f4;
+  color: #770C0C;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .mobile-submenu {
+    position: relative;
+  }
+  
+  .mobile-submenu .submenu-listmovil {
+    position: relative;
+    width: auto;
+    box-shadow: none;
+  }
+}
 /*----------------------------------------------------* ESTILOS PARA LAS TABLAS DE ASIGNATURAS Y FECHAS------------------------------------- */
 .modulos-table {
 width: 80%;
@@ -969,12 +1014,7 @@ font-weight: bold;
   /* Mostrar en móvil y tablet */
 }
 
-#section3 details p {
-  margin-top: 5px;
-  /* Espaciado solo para párrafos dentro de <details> */
-  line-height: 1.5;
-  /* Mejora la legibilidad */
-}
+
 }
 
 /* ------------------------------------------------Adaptación DEL SUBMENU NARANJA para móvil y tablet */
@@ -1115,12 +1155,7 @@ transition: transform 0.2s ease; /* Animación suave */
 transform: rotate(90deg); /* Gira la flecha cuando está abierto */
 }
 
-/* Párrafos dentro de <details> */
-#section3 details p {
-margin-top: 5px; /* Espaciado solo para párrafos dentro de <details> */
-padding-left: 30px; /* Padding izquierdo para párrafos dentro de <details> */
-line-height: 1.5; /* Mejora la legibilidad */
-}
+
 .section1 h2, .section1 h3,
 .section2 h2, .section2 h3,
 .section3 h2, .section3 h3,
