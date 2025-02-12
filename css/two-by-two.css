@@ -1,0 +1,136 @@
+/* -------------------------------------------------------------------------------------two by two*------------------------------------------------------------/
+/* Contenedor general */
+/* ----------------------- ESTILOS GENERALES ----------------------- */
+.two-by-two {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas por defecto */
+  gap: 40px; /* Espaciado entre los divs */
+  padding: 20px;
+  background-color: #f8f8f8;
+  text-align: center;
+  width: 100%;
+  max-width: 60%; /* En PC y tablet se limita al 60% */
+  margin: 0 auto; /* Centrar el contenedor */
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.box img {
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* ----------------------- PC (1024px en adelante) ----------------------- */
+/* Mantiene 2 columnas y el tamaño actual de las imágenes */
+@media (min-width: 1024px) {
+  .two-by-two {
+    grid-template-columns: repeat(2, 1fr); /* Se mantiene en 2 columnas */
+  }
+
+  .box img {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+/* ----------------------- Tablets (768px - 1023px) ----------------------- */
+/* Se mantienen 2 columnas pero SIN borde */
+@media (min-width: 768px) and (max-width: 1700px) {
+  .two-by-two {
+    grid-template-columns: 1fr; /* Mantiene 2 columnas */
+    
+      max-width: 80% !important; /* ✅ Mantiene el 60% de ancho */
+      width: 80% !important;
+      margin: 0 auto !important; /* ✅ Centra el contenedor con 20% de margen a cada lado */
+    
+  }
+
+  .box {
+    border: none; /* 🔥 Quita el borde */
+  }
+}
+
+/* ----------------------- Móviles grandes (601px - 767px) ----------------------- */
+/* Se mantiene 2 columnas pero SIN borde */
+@media (min-width: 601px) and (max-width: 767px) {
+  .two-by-two {
+    grid-template-columns: 1fr; /* Mantiene 2 columnas */
+  }
+
+  .box {
+    border: none; /* 🔥 Quita el borde */
+  }
+
+  .box img {
+    width: calc(100% - 0px); /* ✅ Deja 10px de margen a cada lado */
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* ----------------------- Móviles pequeños (600px o menos) ----------------------- */
+/* Se cambia a 1 sola columna, con borde naranja y margen de 10px */
+@media (max-width: 600px) {
+  .two-by-two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 20px); /* 🔥 Deja 10px de margen a cada lado */
+    max-width: 100%;
+  }
+
+  .box {
+   
+    width: calc(100% - 20px); /* 🔥 Deja 10px de margen a cada lado */
+    max-width: 100%;
+    margin: 0 auto; /* Centra el div */
+    padding: 20px;
+  }
+
+  .box img {
+    width: calc(100% - 20px); /* 🔥 La imagen también deja 10px de margen a los lados */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* ----------------------- HOVER ----------------------- */
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* ----------------------- ESPACIADO ENTRE ELEMENTOS ----------------------- */
+.spacing {
+  height: 1.25rem;
+}
+
+/* ----------------------- ESTILOS DE TEXTO ----------------------- */
+.box h2 {
+  font-family: 'Lora', cursive;
+  font-size: 18px;
+  color: #333;
+}
+@media (max-width: 768px) {
+  .box h2 {
+    font-size: 0.875rem; /* Aproximadamente 14px */
+  }
+}
+.highlight {
+  font-weight: bold;
+  color: #e06c0e;
+}

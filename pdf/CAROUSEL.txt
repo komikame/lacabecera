@@ -1,0 +1,117 @@
+
+/* ----------------------------------------------------------------------------------CARUSSEL ALUMNOS----------------------------------------------- */
+/* Carrusel */
+.carousel {
+  max-width: 600px;
+  margin: auto; /* Centrar el carrusel */
+  overflow: hidden; /* Ocultar contenido desbordado */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* Posicionamiento relativo para controles */
+  padding-top: 40px;
+}
+
+.carousel-inner {
+  display: flex; /* Alineación en fila */
+  transition: transform 0.5s ease-in-out; /* Suavizar movimiento */
+  width: 100%; /* Asegura que ocupe todo el ancho del carrusel */
+}
+
+.carousel-item {
+  flex: 0 0 100%; /* Cada diapositiva ocupa el 100% del contenedor */
+  display: flex;
+  flex-direction: column; /* Elementos en columna: imagen y texto */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  text-align: center; /* Centrar texto */
+  opacity: 0; /* Ocultar inicialmente */
+  transition: opacity 0.5s ease-in-out; /* Transición de opacidad */
+}
+
+.carousel-item.active {
+  opacity: 1; /* Sólo mostrar la diapositiva activa */
+}
+
+.carousel-item img {
+  width: 150px; /* Tamaño de la imagen */
+  height: 150px; /* Tamaño de la imagen */
+  object-fit: cover; /* Mantener proporción de la imagen */
+  border-radius: 50%; /* Hacer la imagen circular */
+  margin-bottom: 15px; /* Espaciado entre imagen y texto */
+}
+
+.carousel-item p {
+  margin: 0 auto; /* Centra el texto horizontalmente */
+  padding: 0; /* Elimina cualquier padding interno */
+  max-width: 95%; /* Limita el ancho del texto */
+  word-wrap: break-word; /* Permite cortar palabras largas */
+  text-align: justify; /* Mantén el texto justificado */
+}
+
+/* Controles del carrusel */
+
+
+.carousel-control {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* -----------------------------------------------------Adaptaciones para dispositivos móviles y tabletas del carousel--------------------------------- */
+@media (max-width: 1024px) {
+  .carousel {
+    max-width: 90%; /* Ocupa el 90% del ancho del contenedor */
+    margin: auto; /* Centrar el carrusel */
+    text-align: center;
+  }
+
+  .carousel-item img {
+    width: 120px; /* Tamaño más pequeño para imágenes */
+    height: 120px;
+  }
+
+  .carousel-item p {
+    font-size: 16px; /* Texto más pequeño para móviles */
+  
+    text-align: justify; /* Mantén el texto justificado */
+  }
+
+
+  .carousel-item {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    
+  }
+  .carousel-inner {
+    align-items: center; /* Centra los elementos */
+
+}
+}
+/*------------------------------- MEDIA CAROUSEL PARA MOVILES Y TABLETS---------------------------------- */
+@media (max-width: 768px) 
+{
+   .date-container h2 {
+    font-family: 'lora', cursive; /* Fuente bonita */
+    font-size: 16px;
+    
+  }
+  .carousel-item img {
+    width: 100px; /* Imágenes aún más pequeñas */
+    height: 100px;
+  }
+
+  .carousel-item p {
+    font-size: 12px; /* Texto aún más pequeño */
+  }
+}

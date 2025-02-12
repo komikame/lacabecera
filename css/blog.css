@@ -1,0 +1,167 @@
+/*nymerador de listas*/
+.numerada {
+  counter-reset: item;
+  /* Resetea el contador */
+  list-style: none;
+  /* Elimina los puntos de la lista */
+  padding-left: 0;
+  /* Ajusta la alineación si es necesario */
+}
+
+.numerada li {
+  counter-increment: item;
+  /* Incrementa el contador en cada <li> */
+  margin-bottom: 8px;
+  /* Espaciado opcional */
+}
+
+.numerada li::before {
+  content: counter(item) ". ";
+  /* Agrega la numeración antes del texto */
+  font-weight: bold;
+  color: #f8f4f4;
+  /* Color del número */
+}
+
+/* ----------------------------------------------------------------CSS PARA EL GRID--------------------------------*/
+
+.content-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.content-box {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.pagination-container {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.pagination {
+  display: inline-flex;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.page-link {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.page-link:hover {
+  background: #f0f0f0;
+}
+
+.page-link.active {
+  background: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+/* ----------------------------------------------------------------PARRAFOS Y TITULOS del blog--------------------------------*/
+p {
+  color: #333;
+  /* Color del texto */
+  font-size: 16px;
+  /* Tamaño de la fuente */
+  line-height: 1.6;
+  /* Espaciado entre líneas */
+  margin-bottom: 15px;
+  /* Espaciado entre párrafos */
+  text-align: left;
+  /* Alineación a la izquierda */
+}
+
+/* ----------------------------------------------------------------distribuciuon del blog--------------------------------*/
+/* Estructura principal */
+.distribucion-blog {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  width: 80%;
+  /* Ocupa el 80% de la pantalla */
+  margin: 80px auto 0 auto;
+  /* Margen superior de 40px y centrado */
+
+}
+
+.indice-contenido {
+  background-color: #7c7575;
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+  text-align: left;
+
+}
+
+/* Contenido principal */
+.contenido-blog {
+  flex: 2;
+  background-color: #fff;
+}
+
+/* Anuncios */
+.anuncio-lateral {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Cada anuncio */
+.anuncio {
+  background-color: #f4f4f4;
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+/* Diseño para PC */
+@media screen and (min-width: 1024px) {
+  .distribucion-blog {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    /* Aumenta el espacio entre contenido-blog y anuncio-lateral */
+  }
+
+  .contenido-blog {
+    width: 70%;
+  }
+
+  .anuncio-lateral {
+    width: 30%;
+  }
+}
+
+/* Diseño para tablets y móviles */
+@media screen and (max-width: 1023px) {
+  .distribucion-blog {
+    flex-direction: column;
+    width: 100%;
+    /* Ocupará todo el ancho en dispositivos pequeños */
+  }
+
+  .contenido-blog {
+    width: 100%;
+  }
+
+  .anuncio-lateral {
+    width: 100%;
+  }
+}
+
+/* NAVEGACION CON SU @MEDIA QUERIES */

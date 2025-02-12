@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Medicina</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/two-by-two.css">
+  <link rel="stylesheet" href="css/carousel.css">
+
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@300;400;700&display=swap"
     rel="stylesheet">
@@ -26,59 +29,54 @@
 <body>
   <!-- Menú fijo -->
   <!-- Menú fijo -->
-<header>
-  <nav>
-    <!-- Menú para PC -->
+  <header class="header">
     <div class="menu-container pc-menu">
-      <li><img src="/images/alaya-logo-ayurveda-tradicional-1.webp" alt="MiLogo" class="logo" id="logo"></li>
-
-      <!-- Menú principal -->
-      <ul class="menu">
-        <li><a href="/index.html">INICIO</a></li>
-        <li class="submenu">
-          <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
-          <ul class="submenu-list">
-            <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
-            <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
-            <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
-          </ul>
-        </li>
-        <li><a href="/ayurveda-online.html">FORMACIÓN ONLINE</a></li>
-        <li><a href="/difusion.html">DIFUSIÓN</a></li>
-        <li><a href="/contacto.html">CONTACTO</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/instagram.html">Instagram</a></li>
-      </ul>
-    </div>
-
-    <!-- Menú para móvil -->
-    <div class="menu-container mobile-menu">
-      <!-- Logo centrado -->
-      <div class="menu-header">
-        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
-        <img src="/images/alaya-logo-ayurveda-tradicional.webp" alt="Logo" class="logo-menu">
-      </div>
-      <!-- Menú principal para móvil -->
-      <ul class="menu">
-        <li><a href="/index.html">INICIO</a></li>
-        <li class="mobile-submenu">
-          <a href="#" class="no-link submenu-toggle">FORMACIÓN PRESENCIAL</a>
-          <ul class="submenu-listmovil">
-            <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
-            <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
-            <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
-          </ul>
-        </li>
-        <li><a href="/ayurveda-online.html">FORMACIÓN ONLINE</a></li>
-        <li><a href="/difusion.html">DIFUSIÓN</a></li>
-        <li><a href="/contacto.html">CONTACTO</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-      </ul>
+        <li><img src="/images/alaya-logo-ayurveda-tradicional-1.webp" alt="MiLogo" class="logo" id="logo"></li>
+        <ul class="menu">
+            <li><a href="/index.html">INICIO</a></li>
+            <li class="submenu">
+                <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
+                <ul class="submenu-list">
+                    <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
+                    <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
+                    <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
+                </ul>
+            </li>
+            <li><a href="/ayurveda-online.html">FORMACIÓN ONLINE</a></li>
+            <li><a href="/difusion.html">DIFUSIÓN</a></li>
+            <li><a href="/contacto.html">CONTACTO</a></li>
+            <li><a href="/blog/blog.html">Blog</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
     </div>
     
-</nav>
+    <!-- Menú móvil -->
+    <div class="menu-container mobile-menu">
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        <div class="logo-container">
+            <img src="/images/alaya-logo-ayurveda-tradicional-1.webp" alt="MiLogo" class="logo" id="logo-movil">
+        </div>
+    </div>
 </header>
+
+<nav class="menu-container mobile-menu" id="mobileMenu">
+    <ul class="menu">
+        <li><a href="/index.html">INICIO</a></li>
+        <li class="mobile-submenu">
+            <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
+            <ul class="submenu-listmovil">
+                <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
+                <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
+                <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
+            </ul>
+        </li>
+        <li><a href="/ayurveda-online.html">FORMACIÓN ONLINE</a></li>
+        <li><a href="/difusion.html">DIFUSIÓN</a></li>
+        <li><a href="/contacto.html">CONTACTO</a></li>
+        <li><a href="/blog/blog.html">Blog</a></li>
+        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+    </ul>
+</nav>
 
 
   <!-- Contenido: Solo una sección visible a la vez -->
@@ -86,16 +84,9 @@
     <!-- ----------------------------------------------------------SECCION INICO----------------------------------------------------->
     
       <div class="parallax" style="background-image: url('images/ayurveda-tradicional-barcelona.webp')">
-        <!-- Espaciador para PC -->
-        <!-- Espaciador más ancho para móvil y tablet (antes del H1) -->
-        <!-- Título -->
-        <div class="titulo">
-          <h1>Formación en Ayurveda Tradicional</h1>
-        </div>
-
-        <!-- Espaciador más ancho para móvil y tablet (antes del H1) -->
-        <!-- Contenido adicional -->
-      
+          <div class="titulo">
+           <h1>Formación en Ayurveda Tradicional</h1>
+            </div>
       </div>
       <div class="sanscrito">
         <blockquote>
@@ -123,7 +114,7 @@
             <img src="images/curso-masaje-ayurveda.webp" alt="masaje-ayurveda-barcelona">
             <div class="spacing"></div>
             <h2><span class="highlight">desde</span> 5-Abril-25 <span class="highlight">hasta</span> 6-Julio-25</h2>
-            <button class="button button-1" data-target="masaje-ayurveda">SABER MÁS</button>
+            <a href="masaje-ayurveda.html" class="button button-1">SABER MÁS</a>
           </div>
 
           <div class="box">
@@ -131,7 +122,7 @@
             <div class="spacing"></div>
             <h2><span class="highlight">desde</span> 19-Octubre-2024 <span class="highlight">hasta</span> 6-Marzo-25
             </h2>
-            <button class="button button-2" data-target="alimentacion-ayurveda">SABER MÁS</button>
+            <a href="alimentacion-ayurveda.html" class="button button-2">SABER MÁS</a>
           </div>
 
           <div class="box">
@@ -139,14 +130,15 @@
             <div class="spacing"></div>
             <h2><span class="highlight">desde</span> 19-Octubre-2024 <span class="highlight">hasta</span> 6-Julio-25
             </h2>
-            <button class="button button-3" data-target="alimentacion-y-masaje-ayurveda">SABER MÁS</button>
+            <a href="alimentacion-y-masaje-ayurveda.html" class="button button-3">SABER MÁS</a>
           </div>
 
           <div class="box">
             <img src="images/curso-ayurveda-online.webp" alt="Imagen 4">
             <div class="spacing"></div>
             <h2><span class="highlight">desde</span> 5-Abril-25 <span class="highlight">hasta</span> 6-Julio-25</h2>
-            <button class="button button-4" data-target="ayurveda-online">SABER MÁS</button>
+            <a href="ayurveda-online.html" class="button button-4">SABER MÁS</a>
+
           </div>
         </div>
 

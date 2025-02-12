@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alimentación Ayurveda</title>
+  <title>Alimentación y Masaje Ayurveda</title>
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@300;400;700&display=swap"
@@ -24,59 +24,56 @@
 <body>
 
   <!-- Menú fijo -->
-  <header>
-    <nav>
-      <!-- Menú para PC -->
-      <div class="menu-container pc-menu">
-        <li><img src="/images/alaya-logo-ayurveda-tradicional-1.webp" alt="MiLogo" class="logo" id="logo"></li>
-  
-        <!-- Menú principal -->
-        <ul class="menu">
-          <li><a href="/index.html">INICIO</a></li>
-          <li class="submenu">
-            <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
-            <ul class="submenu-list">
-              <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
-              <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
-              <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
-            </ul>
-          </li>
-          <li><a href="/ayurveda-online.html">FORMACIÓN ONLINE</a></li>
-          <li><a href="/difusion.html">DIFUSIÓN</a></li>
-          <li><a href="/contacto.html">CONTACTO</a></li>
-          <li><a href="/blog.html">Blog</a></li>
-          <li><a href="/instagram.html">Instagram</a></li>
-        </ul>
+  <header class="header">
+    <div class="menu-container pc-menu">
+      <li><img src="/images/alaya-logo-ayurveda-tradicional-1.webp" alt="MiLogo" class="logo" id="logo"></li>
+      <ul class="menu">
+        <li><a href="/index.html">INICIO</a></li>
+        <li class="submenu">
+          <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
+          <ul class="submenu-list">
+            <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
+            <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
+            <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
+          </ul>
+        </li>
+        <li><a href="/ayurveda-online.html">FORMACIÓN ONLINE</a></li>
+        <li><a href="/difusion.html">DIFUSIÓN</a></li>
+        <li><a href="/contacto.html">CONTACTO</a></li>
+        <li><a href="/blog/page1.html">Blog</a></li>
+        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+      </ul>
+    </div>
+
+    <!-- Menú móvil -->
+    <div class="menu-container mobile-menu">
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+      <div class="logo-container">
+        <img src="/images/alaya-logo-ayurveda-tradicional-1.webp" alt="MiLogo" class="logo" id="logo-movil">
       </div>
-  
-      <!-- Menú para móvil -->
-      <div class="menu-container mobile-menu">
-        <!-- Botón de toggle -->
-        <button class="menu-toggle" aria-label="Abrir menú">
-          ☰
-        </button>
-        <!-- Menú principal para móvil -->
-        <ul class="menu">
-          <li><a href="/index.html">INICIO</a></li>
-          <li class="mobile-submenu">
-            <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
-            <ul class="submenu-listmovil">
-              <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
-              <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
-              <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
-            </ul>
-          </li>
-          <li><a href="/ayurveda-online.html">FORMACIÓN ONLINE</a></li>
-          <li><a href="/difusion.html">DIFUSIÓN</a></li>
-          <li><a href="/contacto.html">CONTACTO</a></li>
-          <li><a href="/blog.html">Blog</a></li>
-          <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-        </ul>
-      </div>
-  </nav>
+    </div>
   </header>
-  
-  
+
+  <nav class="menu-container mobile-menu" id="mobileMenu">
+    <ul class="menu">
+      <li><a href="/index.html">INICIO</a></li>
+      <li class="mobile-submenu">
+        <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
+        <ul class="submenu-listmovil">
+          <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
+          <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
+          <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
+        </ul>
+      </li>
+      <li><a href="/ayurveda-online.html">FORMACIÓN ONLINE</a></li>
+      <li><a href="/difusion.html">DIFUSIÓN</a></li>
+      <li><a href="/contacto.html">CONTACTO</a></li>
+      <li><a href="/blog/page1.html">Blog</a></li>
+      <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+    </ul>
+  </nav>
+
+
 
   <!-- Contenido de la página -->
   <main>
@@ -108,11 +105,11 @@
         <a href="#section2" data-target="section2">Plan de Estudios</a>
         <a href="#section3" data-target="section3">Organización</a>
         <a href="#section4" data-target="section4">Recibir información</a>
-        <a href="pdf/Alimentaciuon y Masaje  Ayurveda.pdf" target="_blank">Descargar el PDF</a>
+        <a href="pdf/ALIMENTACIÓN Y MASAJE AYURVEDA.pdf" target="_blank">Descargar el PDF</a>
       </div> <!-- FIN DIV SECTIONS-->
 
       <div id="section1" class="visible">
-        <h2 class="align-left">Introducción</h2>
+        <h2>Exposición</h2>
         <p>
           El <strong>Diploma de Especialización en Alimentación y Masaje Ayurveda Tradicional</strong>, en modalidad
           presencial, combina dos pilares fundamentales del Ayurveda: la alimentación y el masaje. Este curso está
@@ -124,8 +121,7 @@
         <p>
           En el módulo de alimentación, aprenderás a implementar de manera sencilla los principios de la dieta
           ayurvédica,
-          basados en la observación ancestral y respaldados por conocimientos científicos contemporáneos. En el módulo
-          de
+          basados en la observación ancestral y respaldados por conocimientos científicos contemporáneos. En el módulo de
           masaje, descubrirás técnicas terapéuticas específicas para equilibrar los doshas, mejorar la circulación y
           promover la relajación integral del cuerpo y la mente.
         </p>
@@ -145,16 +141,56 @@
             Profesionales Naturópatas</strong> (Resolución de 12 de agosto de 2013, Dirección General de Empleo,
           España).
         </p>
-        <h3 class="align-left">Público</h3>
-        <p class="align-left">
-          Este curso está dirigido a cualquier persona mayor de edad con interés en la medicina Ayurveda y en el
-          aprendizaje
-          de técnicas terapéuticas holísticas.
+  
+        <h4>Público</h4>
+        <p>
+          El curso de Alimentación y Masaje Ayurveda está diseñado para todas aquellas personas interesadas en
+          comprender y
+          aplicar los principios de la medicina ayurvédica en su vida diaria o profesional. Este programa está
+          especialmente dirigido a:
         </p>
-        <h3 class="align-left">Duración</h3>
-        <p class="align-left">14 ECTS*</p>
-        <p class="align-left"> - 150 h. lectivas en 10 seminarios presenciales de fin de semana.</p>
-        <p class="align-left"> - 200 h. de estudio y trabajo personal.</p>
+        <p><strong>Terapeutas y profesionales de la salud holística:</strong> Aquellos que deseen ampliar
+          sus conocimientos y ofrecer una visión integral en el cuidado de sus pacientes, integrando la nutrición y el
+          masaje
+          ayurveda como herramientas terapéuticas.</p>
+
+        <p><strong>Nutricionistas y dietistas:</strong> Profesionales que buscan incorporar una perspectiva más profunda
+          y
+          personalizada sobre la alimentación basada en los doshas y el equilibrio cuerpo-mente, y cómo ésta se
+          complementa con
+          el masaje ayurvédico.</p>
+
+        <p><strong>Estudiantes y practicantes de Ayurveda:</strong> Personas en formación que deseen adquirir un enfoque
+          especializado en la alimentación y el masaje como pilares fundamentales de esta medicina ancestral.</p>
+
+        <p><strong>Masajistas y terapeutas corporales:</strong> Profesionales que desean complementar sus habilidades
+          con los
+          principios de la medicina ayurvédica, ofreciendo tratamientos más completos y personalizados que integren la
+          alimentación y el masaje.</p>
+
+        <p><strong>Interesados en la alimentación saludable y el bienestar:</strong> Individuos que deseen explorar
+          nuevas formas de
+          nutrir su cuerpo y mente, y de promover el bienestar a través del masaje, utilizando conocimientos milenarios
+          para
+          prevenir enfermedades y mantener el equilibrio.</p>
+
+        <p><strong>Personas con interés en el desarrollo personal y espiritual:</strong> Aquellos que buscan comprender
+          la conexión
+          entre la alimentación, el masaje, la energía vital (prana) y la armonía interior, desde una perspectiva
+          ayurvédica.</p>
+
+        <p>
+          Este curso no requiere experiencia previa en Ayurveda, solo un interés genuino por aprender como los alimentos
+          y el
+          masaje pueden convertirse en medicina y un camino hacia el equilibrio y la salud integral. ¡Perfecto tanto
+          para
+          principiantes como para profesionales!
+        </p>
+      
+        <h4>Duración</h4>
+        <p>14 ECTS*</p>
+        <p> - 150 h. lectivas en 10 seminarios presenciales de fin de semana.</p>
+        <p> - 200 h. de estudio y trabajo personal.</p>
 
         <div class="cursiva">
 
@@ -191,12 +227,116 @@
 
       </div><!-- FIN DIV SECTION 1 -->
       <!-- ------------------------------------------Section 2  -------------------------------->
-      <div id="section2" class="hidden">aqui va el plan de estudios</div>
+      <div id="section2" class="hidden">
+        <h2>Plan de estudios del Diploma de Alimentación Ayurveda Tradicional</h2>
+
+
+        
+
+        <details>
+          <summary>Metodología y rescursos de aprendizaje</summary>
+          
+          <h4>Metodología</h4>
+          <p>Nuestro curso de <strong>Alimentación y Masaje Ayurveda Tradicional</strong> ofrece flexibilidad para adaptarse a
+            las necesidades de cada estudiante.
+            La metodología y los recursos están diseñados para facilitar el aprendizaje y garantizar una experiencia
+            completa y enriquecedora.
+          </p>
+          <h4>Modalidades de Realización</h4>
+          <p><strong>Presencial:</strong> Clases en un entorno físico donde los estudiantes interactúan directamente con
+            los docentes y compañeros, ideal para quienes prefieren el aprendizaje en persona.</p>
+
+          <p><strong>Online:</strong> Acceso a materiales y clases en directo, que permiten estudiar desde cualquier
+            lugar, ofreciendo comodidad y flexibilidad.</p>
+
+          </p>
+          <h4>Recursos Disponibles</h4>
+          <p><strong>Manual de Alimentación a color en formato físico:</strong> Todos los alumnos recibirán un manual impreso en papel de alta calidad, a todo color, que servirá como material de apoyo durante y después del curso.</p>
+          <p><strong>Manual de Masaje a color en formato físico:</strong> Todos los alumnos recibirán un manual impreso en papel de alta calidad, a todo color, que servirá como material de apoyo durante y después del curso.</p>
+          <p><strong>Clases grabadas:</strong> Los participantes tendrán acceso a las grabaciones de las sesiones para revisar los contenidos a su ritmo.</p>
+          <p>
+            Con estas herramientas y recursos, buscamos garantizar que todos los
+            estudiantes, independientemente de la modalidad que elijan, tengan
+            acceso a una formación completa, práctica y efectiva.
+          </p>
+        </details>
+
+        <details>
+          <summary>Acreditaciones</summary>
+          <h4>Acreditaciones del Curso</h4>
+          <p>
+            Al finalizar el curso de
+            <strong>Alimentación Ayurveda Tradicional</strong>, los alumnos
+            tendrán la oportunidad de obtener una acreditación formal que respalde
+            su formación. Ofrecemos dos tipos de certificaciones, dependiendo de las
+            preferencias y objetivos de los participantes.
+          </p>
+          <h4>Diploma Certificado</h4>
+          <p>
+            Los alumnos que deseen obtener un diploma oficial deberán superar una
+            evaluación final, que incluye un <strong>examen escrito</strong>. Este
+            diploma estará sellado y avalado por la
+            <strong>Asociación Alaya para el Desarrollo Integral (A.A.D.I.)</strong>.
+          </p>
+          <h4>Certificado de Asistencia</h4>
+          <p>
+            En caso de no querer realizar el examen final, los participantes
+            recibirán un <strong>certificado de asistencia</strong>, el cual
+            indicará las horas cursadas durante el programa de formación.
+          </p>
+          <p>
+            De esta manera, aseguramos que todos los alumnos reciban un
+            reconocimiento acorde a su nivel de participación y logro durante el
+            curso.
+          </p>
+        </details>
+        <details>
+          <summary>Evaluación</summary>
+          <h4>Evaluación del Curso</h4>
+          <p>
+            La evaluación en el curso de <strong>Alimentación Ayurveda Tradicional</strong> está diseño para valorar
+            el
+            aprendizaje integral de los alumnos, teniendo en cuenta diversos aspectos que reflejan su compromiso y
+            comprensión de los contenidos.
+          </p>
+          <h4>Aspectos Evaluados</h4>
+          <p><strong>Actitud:</strong> Se valorará la disposición, interés y participación activa de los estudiantes
+            durante el curso.</p>
+          <p><strong>Trabajos presentados:</strong> Los proyectos y actividades entregados a lo largo del programa
+            serán revisados para evaluar la aplicación práctica de los conocimientos adquiridos.</p>
+          <h4>Examen Final</h4>
+          <p>La evaluación culminará con un <strong>examen escrito</strong>, el cual consistirá en preguntas de
+            desarrollo.
+            En este examen, los alumnos deberán demostrar su comprensión de los principios de la alimentación
+            ayurvédica,
+            así como su capacidad para aplicar los conceptos aprendidos en situaciones prácticas y teóricas.
+          </p>
+          <p>Este enfoque asegura una valoración justa y completa del desempeño de los participantes, permitiendo tanto
+            el reconocimiento de su esfuerzo como la verificación de su dominio de los contenidos impartidos.
+          </p>
+        </details>
+        <details>
+          <summary>Inscripciones</summary>
+        <p><strong>Requisitos de Admisión:</strong> ser mayor de edad.</p>
+
+          <p>
+            <strong>Presentación de solicitudes:</strong> las personas interesadas
+            en la formación se pondrán en contacto con la Recepción del centro a
+            través de correo electrónico o el número de teléfono
+            <a href="tel:+34639723255">(0034) 639 72 32 55</a>. La inscripción
+            quedará formalizada después ingresar el importe de la reserva, indicando
+            el nombre y el concepto “Curso M.A”. Para cualquier aclaración sobre la
+            formación o el procedimiento de inscripción también deberá dirigirse a
+            la Recepción.
+          </p>
+        </details>
+      </div>
       <!-- ------------------------------------------Section 3 -------------------------------->
       <div id="section3" class="hidden">
         <h2>Organización</h2>
         <details>
           <summary>En qué fechas tienen lugar las clases?</summary>
+
           <table class="modulos-table">
             <thead>
               <tr>
@@ -262,20 +402,23 @@
 
         <details>
           <summary>Cuáles son los horarios?</summary>
-          <h2>Horarios</h2>
+          <h3>Cuáles son los horarios?</h3>
+          <h4>Horarios</h4>
           <p class="texto-centrado"><strong>Sábado y Domingo</strong></p>
           <p class="texto-centrado">De 10:00 a 14:00 y de 15:30 a 19:00 horas</p>
         </details>
 
         <details>
           <summary>Cómo puedo reservar mi Plaza?</summary>
+          <h3>Cómo puedo reservar mi Plaza?</h3>
           <p>
             Accede a la información sobre cómo reservar tu plaza para el evento.
           </p>
         </details>
         <details>
           <summary>Cómo y cunándo se realizan los pagos?</summary>
-          <h2>Pagos</h2>
+          <h3>Cómo y cunándo se realizan los pagos?</h3>
+          <h4>Pagos</h4>
 
           <p><strong>Precio:</strong> 1960 euros.</p>
 
@@ -313,7 +456,8 @@
         </details>
         <details>
           <summary>Inscripciones</summary>
-          <h2>Inscripciones</h2>
+          <h3>Inscripciones</h3>
+          <h4>Inscripciones</h4>
 
           <p><strong>Requisitos de Admisión:</strong> ser mayor de edad.</p>
 
@@ -329,19 +473,112 @@
           </p>
         </details>
       </div>
-      <div id="section4" class="hidden">Contenido para la Parte de masaje</div>
+      <div id="section4" class="hidden">
+        <!-- Formulario Elegante y Profesional -->
+        <div class="form-container">
+
+          <form id="form-ayurveda" method="post" action="PHP/enviar.php">
+            <!-- Token CSRF -->
+            <input type="hidden" name="token" id="csrf-token">
+
+            <!-- Campo: Nombre -->
+            <div class="form-group">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <!-- Campo: Apellidos -->
+            <div class="form-group">
+              <label for="apellidos">Apellidos:</label>
+              <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+
+            <!-- Campo: Email -->
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <!-- Campo: Teléfono -->
+            <div class="form-group">
+              <label for="telefono">Teléfono:</label>
+              <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <!-- Campo: Opciones (Checkboxes) -->
+            <div class="form-group">
+              <p class="options-title">Selecciona tus opciones:</p>
+              <div class="checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="opciones[]" value="Alimentación Ayurveda">
+                  <span class="checkmark"></span>
+                  Alimentación Ayurveda
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="opciones[]" value="Alimentación Ayurveda - Online">
+                  <span class="checkmark"></span>
+                  Alimentación Ayurveda - Online
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="opciones[]" value="Masaje Ayurveda">
+                  <span class="checkmark"></span>
+                  Masaje Ayurveda
+                </label>
+                <label class="checkbox-label">
+                  <input type="checkbox" name="opciones[]" value="Alimentación y Masaje Ayurveda (pack)">
+                  <span class="checkmark"></span>
+                  Alimentación y Masaje Ayurveda (pack)
+                </label>
+              </div>
+            </div>
+
+            <!-- Botón de Envío -->
+            <button type="submit" class="submit-btn">Enviar</button>
+          </form>
+        </div>
+
+      </div>
+
 
 
     </div>
+
+    <!-------------------------------------------------------------------------------FIN SECCION CONTACTO ----------------------------------------------------------------->
+
+
+    </div>
+    <div class="floating-buttons">
+      <!-- Botón de WhatsApp -->
+      <a href="https://wa.me/34XXXXXXXXX" class="whatsapp-button" target="_blank">
+        <span>📩</span> Chatear por WhatsApp
+      </a>
+
+      <!-- Botón de Llamada -->
+      <a href="tel:+34XXXXXXXXX" class="call-button">
+        <span>📞</span> Llamar ahora
+      </a>
+    </div>
+
   </main>
 
+  <div class="social-share">
+    <p>¡Comparte esta página en tus redes sociales!</p>
+
+    <a href="https://api.whatsapp.com/send?text=¡Echa%20un%20vistazo%20a%20esta%20página!%20URL_AQUI" target="_blank"
+      class="whatsapp">WhatsApp</a>
+
+    <a href="https://t.me/share/url?url=URL_AQUI&text=¡Echa%20un%20vistazo%20a%20esta%20página!" target="_blank"
+      class="telegram">Telegram</a>
+
+    <a href="https://www.facebook.com/sharer/sharer.php?u=URL_AQUI" target="_blank" class="facebook">Facebook</a>
+  </div>
   <!-- Pie de página -->
   <footer>
     <p>© 2025 Mi Sitio Web. Todos los derechos reservados.</p>
   </footer>
+  </div>
 
   <script src="js/scripts.js"></script>
-
 </body>
 
 </html>

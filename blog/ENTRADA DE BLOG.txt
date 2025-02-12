@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entendiendo los Tres Doshas - Blog de Ayurveda</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .article-content h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #1a472a;
+            scroll-margin-top: 2rem;
+        }
+        
+        .article-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        
+        .article-content img {
+            margin: 2rem 0;
+            border-radius: 0.5rem;
+        }
+
+        .toc-link {
+            transition: all 0.3s ease;
+            border-left: 2px solid transparent;
+        }
+
+        .toc-link:hover {
+            border-left-color: #047857;
+            padding-left: 1rem;
+            color: #047857;
+        }
+
+        .toc-link.active {
+            border-left-color: #047857;
+            padding-left: 1rem;
+            color: #047857;
+            font-weight: 600;
+        }
+
+        .sticky-toc {
+            position: sticky;
+            top: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <main class="container mx-auto px-4 max-w-6xl py-12">
+        <!-- Cabecera del artículo -->
+        <header class="mb-8">
+            <div class="mb-4">
+                <span class="text-green-600 text-sm font-semibold px-3 py-1 bg-green-50 rounded-full">DOSHAS</span>
+                <span class="text-gray-500 text-sm ml-4">15 Feb 2025</span>
+            </div>
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">
+                Entendiendo los Tres Doshas: Vata, Pitta y Kapha
+            </h1>
+            <div class="flex items-center mb-8">
+                <img src="/api/placeholder/40/40" alt="Autor" class="w-10 h-10 rounded-full">
+                <div class="ml-4">
+                    <p class="text-gray-800 font-medium">Dr. Amrita Sharma</p>
+                    <p class="text-gray-500 text-sm">Experta en Medicina Ayurvédica</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Imagen principal -->
+        <img src="/api/placeholder/1200/600" alt="Los tres doshas" class="w-full rounded-lg mb-8">
+
+        <!-- Contenedor principal con grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <!-- Barra lateral con índice -->
+            <aside class="lg:col-span-1">
+                <div class="bg-white rounded-lg shadow-lg p-6 sticky-toc">
+                    <h3 class="text-lg font-bold text-gray-800 mb-4">Contenidos</h3>
+                    <nav class="space-y-3">
+                        <a href="#introduccion" class="toc-link block text-gray-600 pl-3">Introducción</a>
+                        <a href="#que-son-doshas" class="toc-link block text-gray-600 pl-3">¿Qué son los Doshas?</a>
+                        <a href="#vata" class="toc-link block text-gray-600 pl-3">Vata: El Principio del Movimiento</a>
+                        <a href="#pitta" class="toc-link block text-gray-600 pl-3">Pitta: El Principio de Transformación</a>
+                        <a href="#kapha" class="toc-link block text-gray-600 pl-3">Kapha: El Principio de Estructura</a>
+                        <a href="#equilibrio" class="toc-link block text-gray-600 pl-3">Manteniendo el Equilibrio</a>
+                        <a href="#conclusion" class="toc-link block text-gray-600 pl-3">Conclusión</a>
+                    </nav>
+                </div>
+            </aside>
+
+            <!-- Contenido del artículo -->
+            <article class="lg:col-span-3 bg-white rounded-lg shadow-lg p-8">
+                <div class="article-content text-gray-700">
+                    <p id="introduccion" class="text-xl mb-6 text-gray-600 font-light leading-relaxed">
+                        El Ayurveda, la ciencia milenaria de la vida, se basa en el concepto fundamental de los tres doshas: 
+                        Vata, Pitta y Kapha. Estos principios energéticos gobiernan todas las funciones físicas y mentales del cuerpo...
+                    </p>
+
+                    <h2 id="que-son-doshas">¿Qué son los Doshas?</h2>
+                    <p>
+                        Los doshas son energías biológicas que se encuentran en todo el cuerpo y la mente. 
+                        Cada persona tiene una combinación única de estos tres doshas, lo que determina su prakruti 
+                        o constitución natural...
+                    </p>
+
+                    <h2 id="vata">Vata: El Principio del Movimiento</h2>
+                    <p>
+                        Vata está compuesto por los elementos aire y éter. Gobierna todo movimiento en la mente 
+                        y el cuerpo, controla la respiración, el parpadeo, los movimientos musculares y tisulares...
+                    </p>
+
+                    <h2 id="pitta">Pitta: El Principio de Transformación</h2>
+                    <p>
+                        Pitta encarna los elementos fuego y agua. Es responsable de la digestión, metabolismo, 
+                        temperatura corporal y todos los procesos de transformación en el cuerpo...
+                    </p>
+
+                    <h2 id="kapha">Kapha: El Principio de Estructura</h2>
+                    <p>
+                        Kapha combina los elementos tierra y agua. Proporciona estructura y lubricación al cuerpo,
+                        protege los órganos y mantiene la inmunidad...
+                    </p>
+
+                    <h2 id="equilibrio">Manteniendo el Equilibrio</h2>
+                    <p>
+                        El equilibrio de los doshas es esencial para mantener una buena salud. Cada persona 
+                        necesita un enfoque personalizado basado en su constitución única...
+                    </p>
+
+                    <h2 id="conclusion">Conclusión</h2>
+                    <p>
+                        Comprender nuestros doshas nos ayuda a tomar mejores decisiones para nuestra salud 
+                        y bienestar general...
+                    </p>
+                </div>
+            </article>
+        </div>
+
+        <!-- Navegación entre artículos -->
+        <div class="flex justify-between items-center border-t mt-8 pt-8">
+            <a href="#" class="flex items-center text-green-600 hover:text-green-700">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+                Artículo anterior
+            </a>
+            <a href="#" class="flex items-center text-green-600 hover:text-green-700">
+                Siguiente artículo
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+    </main>
+
+    <script>
+        // Función para manejar el resaltado del índice
+        function updateTOC() {
+            const sections = document.querySelectorAll('.article-content h2');
+            const tocLinks = document.querySelectorAll('.toc-link');
+            
+            // Obtener la posición actual del scroll
+            const scrollPosition = window.scrollY;
+
+            sections.forEach((section, index) => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionBottom = sectionTop + section.offsetHeight;
+                
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    // Remover la clase active de todos los enlaces
+                    tocLinks.forEach(link => link.classList.remove('active'));
+                    // Agregar la clase active al enlace correspondiente
+                    tocLinks[index].classList.add('active');
+                }
+            });
+        }
+
+        // Agregar evento de scroll
+        window.addEventListener('scroll', updateTOC);
+
+        // Suavizar el scroll al hacer clic en los enlaces del índice
+        document.querySelectorAll('.toc-link').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -20,57 +20,56 @@
 <body>
 
     <!-- Menú fijo -->
-    <header>
-      <nav>
-        <!-- Menú para PC -->
-        <div class="menu-container pc-menu">
-          <li><img src="/images/alaya-logo-ayurveda-tradicional-1.webp" alt="MiLogo" class="logo" id="logo"></li>
-    
-          <!-- Menú principal -->
-          <ul class="menu">
+      <!-- Menú fijo -->
+  <!-- Menú fijo -->
+  <header class="header">
+    <div class="menu-container pc-menu">
+        <li><img src="/images/alaya-logo-ayurveda-tradicional-1.webp" alt="MiLogo" class="logo" id="logo"></li>
+        <ul class="menu">
             <li><a href="/index.html">INICIO</a></li>
             <li class="submenu">
-              <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
-              <ul class="submenu-list">
-                <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
-                <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
-                <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
-              </ul>
+                <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
+                <ul class="submenu-list">
+                    <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
+                    <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
+                    <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
+                </ul>
             </li>
             <li><a href="/ayurveda-online.html">FORMACIÓN ONLINE</a></li>
             <li><a href="/difusion.html">DIFUSIÓN</a></li>
             <li><a href="/contacto.html">CONTACTO</a></li>
-            <li><a href="/blog.html">Blog</a></li>
-            <li><a href="/instagram.html">Instagram</a></li>
-          </ul>
-        </div>
-    
-        <!-- Menú para móvil -->
-        <div class="menu-container mobile-menu">
-          <!-- Botón de toggle -->
-          <button class="menu-toggle" aria-label="Abrir menú">
-            ☰
-          </button>
-          <!-- Menú principal para móvil -->
-          <ul class="menu">
-            <li><a href="/index.html">INICIO</a></li>
-            <li class="mobile-submenu">
-              <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
-              <ul class="submenu-listmovil">
-                <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
-                <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
-                <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
-              </ul>
-            </li>
-            <li><a href="/ayurveda-online.html">FORMACIÓN ONLINE</a></li>
-            <li><a href="/difusion.html">DIFUSIÓN</a></li>
-            <li><a href="/contacto.html">CONTACTO</a></li>
-            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/blog/blog.html">Blog</a></li>
             <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-          </ul>
+        </ul>
+    </div>
+    
+    <!-- Menú móvil -->
+    <div class="menu-container mobile-menu">
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        <div class="logo-container">
+            <img src="/images/alaya-logo-ayurveda-tradicional-1.webp" alt="MiLogo" class="logo" id="logo-movil">
         </div>
-    </nav>
-    </header>
+    </div>
+</header>
+
+<nav class="menu-container mobile-menu" id="mobileMenu">
+    <ul class="menu">
+        <li><a href="/index.html">INICIO</a></li>
+        <li class="mobile-submenu">
+            <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
+            <ul class="submenu-listmovil">
+                <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
+                <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
+                <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
+            </ul>
+        </li>
+        <li><a href="/ayurveda-online.html">FORMACIÓN ONLINE</a></li>
+        <li><a href="/difusion.html">DIFUSIÓN</a></li>
+        <li><a href="/contacto.html">CONTACTO</a></li>
+        <li><a href="/blog/blog.html">Blog</a></li>
+        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+    </ul>
+</nav>
     
 
     <!-- Contenido de la página -->

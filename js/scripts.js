@@ -85,6 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("JavaScript cargado correctamente.");
 });
+
 /* ********************************************************************************
  * Manejo del menú móvil
  ******************************************************************************** */
@@ -164,10 +165,38 @@ initCarousel();
  ******************************************************************************** */
 window.addEventListener("scroll", function () {
     if (window.scrollY > 50) {
-        logo.src = "images/alaya-logo-scroll.webp"; // Nuevo logo al hacer scroll
+        logo.src = "/images/alaya-logo-scroll.webp"; // Nuevo logo al hacer scroll
     } else {
-        logo.src = "images/alaya-logo-ayurveda-tradicional-1.webp"; // Logo original
+        logo.src = "/images/alaya-logo-ayurveda-tradicional-1.webp"; // Logo original
     }
 });
 
 console.log("JavaScript cargado correctamente.");
+
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mobileMenu = document.querySelector("#mobileMenu");
+
+    if (menuToggle && mobileMenu) {
+        menuToggle.addEventListener("click", function () {
+            mobileMenu.classList.toggle("show");
+            menuToggle.classList.toggle("active");
+        });
+
+        // Cerrar menú si el usuario hace clic fuera de él
+        document.addEventListener("click", function (event) {
+            if (!mobileMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+                mobileMenu.classList.remove("show");
+                menuToggle.classList.remove("active");
+            }
+        });
+
+        // Cerrar el menú automáticamente si se cambia el tamaño de la pantalla a modo PC
+        window.addEventListener("resize", function () {
+            if (window.innerWidth > 768) { // Ajusta el breakpoint según tu diseño
+                mobileMenu.classList.remove("show");
+                menuToggle.classList.remove("active");
+            }
+        });
+    }
+});
