@@ -1,119 +1,167 @@
-/*nymerador de listas*/
+/* --------------------------------- DEFINICIONES GENERALES --------------------------------- */
+main {
+  margin-top: 100px; /* Evita que el menú fijo cubra el contenido en escritorio */
+}
+@media screen and (max-width: 768px) {
+  main {
+      margin-top: 60px; /* Ajuste para móviles */
+  }
+}
+
+/* --------------------------------- TIPOGRAFÍA --------------------------------- */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --------------------------------- TÍTULOS Y ESPACIADO --------------------------------- */
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contenido-blog h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contenido-blog h2 {
+  font-weight: 400;
+  font-size: 1.9rem;
+  padding-top: 20px;
+  margin-bottom: 20px; /* Añadir separación después de h2 */
+}
+
+.contenido-blog h3 {
+  text-align: left;
+  font-weight: 300;
+  font-size: 2rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 15px; /* Espacio uniforme después de títulos */
+}
+
+.contenido-blog h4 {
+  text-align: left;
+  font-weight: 300;
+  font-size: 1.6rem;
+  padding-top: 20px;
+  margin-bottom: 15px; /* Espacio uniforme después de títulos */
+}
+
+/* Scroll margin para navegación con anclas */
+h3[id], h4[id] {
+  scroll-margin-top: 80px; /* Altura del menú fijo */
+}
+@media (max-width: 768px) {
+  h3[id], h4[id] {
+    scroll-margin-top: 60px;
+  }
+}
+
+/* --------------------------------- PÁRRAFOS --------------------------------- */
+p {
+  color: #0c0404;
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: justify;
+  font-weight: 300;
+}
+
+/* --------------------------------- LISTAS Y ÍNDICE DE CONTENIDOS --------------------------------- */
+/* Listas dentro del contenido del blog */
+.contenido-blog ul {
+  font-family: "Roboto", sans-serif;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.contenido-blog ul li {
+  margin-bottom: 20px;
+}
+
+/* Estilo del índice de contenido */
+.indice-contenido {
+  background-color: #7018e4d3; /* Color de fondo */
+  color: #fff;
+  text-align: left;
+  padding: 20px;
+}
+
+/* Espacio debajo del título "Índice de Contenidos" */
+.indice-contenido h3 {
+    margin-bottom: 20px; /* Espacio después del título */
+}
+
+/* Espaciado entre elementos principales del índice */
+.indice-contenido > ul > li {
+    margin-bottom: 15px; /* Espacio entre cada sección principal */
+}
+
+/* Espaciado entre subsecciones */
+.indice-contenido ul ul {
+    margin-top: 10px; /* Espacio antes del primer subelemento */
+    margin-bottom: 10px; /* Espacio después del último subelemento */
+}
+
+/* Espacio entre subsecciones individuales */
+.indice-contenido ul ul li {
+    margin-bottom: 8px;
+}
+
+/* Listas numeradas */
 .numerada {
   counter-reset: item;
-  /* Resetea el contador */
   list-style: none;
-  /* Elimina los puntos de la lista */
   padding-left: 0;
-  /* Ajusta la alineación si es necesario */
 }
 
 .numerada li {
   counter-increment: item;
-  /* Incrementa el contador en cada <li> */
   margin-bottom: 8px;
-  /* Espaciado opcional */
 }
 
 .numerada li::before {
   content: counter(item) ". ";
-  /* Agrega la numeración antes del texto */
   font-weight: bold;
-  color: #f8f4f4;
-  /* Color del número */
+  color: #2c3e50;
 }
 
-/* ----------------------------------------------------------------CSS PARA EL GRID--------------------------------*/
-
-.content-container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 10px;
-}
-
-.content-box {
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 20px;
-  margin-bottom: 10px;
-}
-
-.pagination-container {
-  max-width: 800px;
-  margin: 20px auto;
-  text-align: center;
-}
-
-.pagination {
-  display: inline-flex;
-  gap: 5px;
-  margin: 20px 0;
-}
-
-.page-link {
-  padding: 8px 12px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  text-decoration: none;
-  color: #333;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.page-link:hover {
-  background: #f0f0f0;
-}
-
-.page-link.active {
-  background: #007bff;
-  border-color: #007bff;
-  color: #fff;
-}
-
-/* ----------------------------------------------------------------PARRAFOS Y TITULOS del blog--------------------------------*/
-p {
-  color: #333;
-  /* Color del texto */
-  font-size: 16px;
-  /* Tamaño de la fuente */
-  line-height: 1.6;
-  /* Espaciado entre líneas */
-  margin-bottom: 15px;
-  /* Espaciado entre párrafos */
-  text-align: left;
-  /* Alineación a la izquierda */
-}
-
-/* ----------------------------------------------------------------distribuciuon del blog--------------------------------*/
-/* Estructura principal */
+/* --------------------------------- CONTENEDORES DEL BLOG --------------------------------- */
 .distribucion-blog {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
-  width: 80%;
-  /* Ocupa el 80% de la pantalla */
+  width: 90%;
   margin: 80px auto 0 auto;
-  /* Margen superior de 40px y centrado */
-
 }
 
-.indice-contenido {
-  background-color: #7c7575;
-  color: #fff;
-  text-align: left;
-  padding: 20px;
-  text-align: left;
-
-}
-
-/* Contenido principal */
-.contenido-blog {
+.contenido-blog-container {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contenido-blog {
   background-color: #fff;
 }
 
-/* Anuncios */
+.contenido-blog img {
+  display: block;
+  margin: 0 auto 40px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------------------------------- ANUNCIOS LATERALES --------------------------------- */
 .anuncio-lateral {
   flex: 1;
   display: flex;
@@ -121,7 +169,6 @@ p {
   gap: 10px;
 }
 
-/* Cada anuncio */
 .anuncio {
   background-color: #f4f4f4;
   padding: 15px;
@@ -129,21 +176,30 @@ p {
   border: 1px solid #ddd;
 }
 
+.anuncio img {
+  width: 100%;
+  height: auto;
+}
+
+/* --------------------------------- RESPONSIVE DESIGN --------------------------------- */
 /* Diseño para PC */
 @media screen and (min-width: 1024px) {
   .distribucion-blog {
     flex-direction: row;
     align-items: flex-start;
-    gap: 30px;
-    /* Aumenta el espacio entre contenido-blog y anuncio-lateral */
+    gap: 50px;
   }
-
-  .contenido-blog {
-    width: 70%;
+  .contenido-blog-container {
+    width: 80%;
+    flex: 2;
   }
-
   .anuncio-lateral {
-    width: 30%;
+    flex: 1;
+    width: 20%;
+    max-width: 350px;
+  }
+  .anuncio img {
+    max-width: 320px;
   }
 }
 
@@ -152,16 +208,69 @@ p {
   .distribucion-blog {
     flex-direction: column;
     width: 100%;
-    /* Ocupará todo el ancho en dispositivos pequeños */
   }
-
-  .contenido-blog {
+  .contenido-blog-container { 
+    order: 1; 
     width: 100%;
   }
-
-  .anuncio-lateral {
+  .anuncio-lateral { 
+    order: 2; 
     width: 100%;
+    max-width: 100%;
   }
 }
 
-/* NAVEGACION CON SU @MEDIA QUERIES */
+/* --------------------------------- CABECERA BLOG ADAPTABLE --------------------------------- */
+.cabecera-blog-adaptable {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.cabecera-blog-adaptable img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+.titulo-cabecera {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.titulo-cabecera h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.2rem;
+  color: white;
+  margin: 0;
+  font-weight: 300;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+/* Ajuste responsive para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .cabecera-blog-adaptable {
+    width: calc(100% - 40px);
+  }
+  .titulo-cabecera h1 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .titulo-cabecera h1 {
+    font-size: 1.2rem;
+  }
+}
+
+

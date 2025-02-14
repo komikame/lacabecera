@@ -108,26 +108,31 @@ text-align: center;
 }
 
 h2 {
-
-font-weight: 400;
-font-size: 1.9rem;
-padding-top: 20px;
+  font-weight: 400;
+  font-size: 1.9rem;
+  padding-top: 20px;
+  margin-bottom: 20px; /* Añadir separación después de h2 */
 }
+
 h3{
   text-align: left;
   font-weight: 300;
-  font-size: 1.8rem;
+  font-size: 2rem;
   padding-top: 20px;
 
 }
-h4{
+
+
+
+
+ h4 {
   text-align: left;
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding-top: 20px;
-  padding-bottom: 20px;
-
+  margin-bottom: 15px; /* Espacio uniforme después de títulos */
 }
+
 
 .titulos2{
   text-align: center;
@@ -1254,7 +1259,7 @@ transform: rotate(90deg); /* Gira la flecha cuando está abierto */
 }
 
 details p {
-  color: #333333;
+  color: #040101;
   /* Cambia esto por el color que prefieras */
 }
 
@@ -1544,4 +1549,37 @@ opacity: 0.8;
   .floating-buttons {
       display: none;
   }
+}
+
+/* Estilos del botón flotante */
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px; /* Distancia desde la parte inferior */
+  right: 20px; /* Distancia desde el lado derecho */
+  width: 50px;
+  height: 50px;
+  background-color: #ce510f; /* Color de fondo */
+  color: white;
+  border: none;
+
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  display: none; /* Ocultar inicialmente */
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 1000;
+}
+
+/* Efecto hover */
+.scroll-to-top:hover {
+  background-color: #000000;
+}
+
+/* Mostrar el botón cuando se haga scroll */
+.scroll-to-top.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
 }
