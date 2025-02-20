@@ -108,7 +108,7 @@ text-align: center;
 }
 
 h2 {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.9rem;
   padding-top: 20px;
   margin-bottom: 20px; /* Añadir separación después de h2 */
@@ -180,7 +180,6 @@ border: none;
 p {
 text-align: left;
 /* Alineación a la izquierda */
-padding: 0 10px;
 /* Padding lateral de 10px */
 }
 
@@ -770,7 +769,7 @@ line-height: 1.4rem;
 /* Ajusta el espacio entre líneas */
 color: #000;
 /* Asegura buen contraste */
-padding: 10px;
+
 /* Mantén el espacio interno */
 text-align: center;
 /* Centra el texto */
@@ -808,7 +807,7 @@ main section.active {
   .sanscrito p {
     font-size: 1rem;
     /* Reducir el tamaño del texto para el párrafo */
-    padding: 10px;
+   
     /* Espacio de 20px alrededor del contenido dentro del <div> */
   }
   

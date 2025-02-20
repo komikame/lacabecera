@@ -1,3 +1,14 @@
+/* ---------------------------------PARA VISUALIZAR MENUMOVIL SIN DISCOS Y QUE SE VEA LA LETRA --------------------------------- */
+
+header ul li {
+  list-style: none;
+}
+.menu-container.mobile-menu ul,
+.menu-container.mobile-menu ul ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 /* --------------------------------- DEFINICIONES GENERALES --------------------------------- */
 main {
   margin-top: 100px; /* Evita que el menú fijo cubra el contenido en escritorio */
@@ -6,6 +17,87 @@ main {
   main {
       margin-top: 60px; /* Ajuste para móviles */
   }
+}
+/* ---------------------------------REDES SOCIALES  --------------------------------- */
+
+.redes-sociales {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Espaciado entre botones */
+  margin-top: 40px;
+}
+
+.btn-red-social {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaciado entre el icono y el texto */
+  padding: 8px 18px; /* Tamaño medio */
+  text-decoration: none;
+  font-size: 12px; /* Texto más claro pero no enorme */
+  font-weight: bold;
+  border-radius: 3px; /* Menos redondeado */
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  color: white;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.btn-red-social i {
+  font-size: 16px; /* Íconos ligeramente más grandes */
+}
+
+/* Colores de cada botón */
+.facebook { background: #0a4592; }
+.twitter { background: #1DA1F2; }
+.whatsapp { background: #046a29; }
+.email { background: #D44638; }
+.instagram { background: #E4405F; } /* Color oficial de Instagram */
+
+/* Efecto hover */
+.btn-red-social:hover {
+  transform: scale(1.1); /* Pequeño efecto al pasar el mouse */
+  opacity: 0.9;
+}
+
+/* RESPONSIVE: Para pantallas pequeñas, los botones se apilan */
+@media screen and (max-width: 600px) {
+  .redes-sociales {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+}
+
+
+/*------------------------------------------------------CONTADORES------------------------------*/
+
+.info-container {
+  display: flex;
+  justify-content: flex-end; /* Alinea todo a la derecha */
+  align-items: center;
+  gap: 20px; /* Espacio entre los elementos */
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 15px; /* Separación del contenido */
+}
+.info-container span {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Espacio entre el icono y el texto */
+}
+.info-container i {
+  color: #666;
+}
+#like-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+#like-button:hover {
+  background-color: #c0392b;
 }
 
 /* --------------------------------- TIPOGRAFÍA --------------------------------- */
@@ -60,7 +152,7 @@ h3[id], h4[id] {
 }
 @media (max-width: 768px) {
   h3[id], h4[id] {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 80px;
   }
 }
 
@@ -72,26 +164,38 @@ p {
   margin-bottom: 15px;
   text-align: justify;
   font-weight: 300;
+  margin-left: 0px;
 }
 
-/* --------------------------------- LISTAS Y ÍNDICE DE CONTENIDOS --------------------------------- */
-/* Listas dentro del contenido del blog */
-.contenido-blog ul {
-  font-family: "Roboto", sans-serif;
-  list-style-type: disc;
-  padding-left: 20px;
+/* --------------------------------- LISTAS FUERA DE INDICE DE CONTENIDO --------------------------------- */
+
+/* Agregar espacio arriba y mover un poco a la izquierda las listas fuera de .indice-contenido */
+/* Agregar espacio arriba, mover a la izquierda y añadir espacio debajo de listas fuera de .indice-contenido */
+
+:not(.indice-contenido) > ul {
+  margin-top: 20px; /* Espacio arriba */
+  margin-bottom: 20px; /* Espacio debajo */
+  padding-left: 20px; /* Mover un poco a la izquierda */
+  list-style-type: disc; /* Puntos normales de lista */
 }
 
-.contenido-blog ul li {
-  margin-bottom: 20px;
+/* Para listas numeradas (ol) fuera de .indice-contenido */
+:not(.indice-contenido) > ol {
+  margin-top: 20px; /* Espacio arriba */
+  margin-bottom: 20px; /* Espacio debajo */
+  padding-left: 20px; /* Mover un poco a la izquierda */
+  list-style-type: decimal; /* Números normales en listas ordenadas */
 }
 
-/* Estilo del índice de contenido */
+/* ----------------------------------------------Estilo del índice de contenido ------------------------*/
 .indice-contenido {
-  background-color: #7018e4d3; /* Color de fondo */
-  color: #fff;
+  
+  color: #684e07;
   text-align: left;
-  padding: 20px;
+  padding: 40px 40px;
+}
+ol li {
+  margin-left: 20px; /* Ajusta el margen según sea necesario */
 }
 
 /* Espacio debajo del título "Índice de Contenidos" */
@@ -101,7 +205,7 @@ p {
 
 /* Espaciado entre elementos principales del índice */
 .indice-contenido > ul > li {
-    margin-bottom: 15px; /* Espacio entre cada sección principal */
+    margin-bottom: 20px; /* Espacio entre cada sección principal */
 }
 
 /* Espaciado entre subsecciones */
@@ -118,7 +222,7 @@ p {
 /* Listas numeradas */
 .numerada {
   counter-reset: item;
-  list-style: none;
+  list-style-type: decimal;
   padding-left: 0;
 }
 
@@ -148,6 +252,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  min-width: 65%; /* Evita que el contenido del blog sea demasiado grande */
 }
 
 .contenido-blog {
@@ -156,9 +261,10 @@ p {
 
 .contenido-blog img {
   display: block;
-  margin: 0 auto 40px;
-  max-width: 100%;
+  margin: 40px auto;
+  max-width: 900px;
   height: auto;
+  width: 100%; /* 🔹 Se adapta al tamaño del contenedor */
 }
 
 /* --------------------------------- ANUNCIOS LATERALES --------------------------------- */
@@ -167,18 +273,55 @@ p {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  min-width: 25%; /* Evita que los anuncios se vuelvan demasiado pequeños */
 }
 
 .anuncio {
   background-color: #f4f4f4;
-  padding: 15px;
+  padding: 20px;
   text-align: center;
   border: 1px solid #ddd;
+  margin-bottom: 20px;
 }
 
 .anuncio img {
+  display: block;
+  margin: 0 auto; /* 🔹 Centra la imagen horizontalmente */
   width: 100%;
+  max-width: 350px; /* 🔹 Evita que la imagen sea demasiado grande */
   height: auto;
+}
+
+/* Ajuste de tamaño de las imágenes en anuncios según el ancho de pantalla */
+
+/*En tablets (entre 769px y 1023px) */
+@media screen and (max-width: 1023px) and (min-width: 769px) {
+  .anuncio img {
+    width: 300px; /* Fija el ancho de la imagen en 300px */
+    height: auto; /* Mantiene la proporción original */
+    display: block; /* Asegura que la imagen no tenga espacios extraños */
+    margin: 0 auto; /* Centra la imagen dentro de su contenedor */
+  }
+}
+
+/* En dispositivos intermedios (entre 265px y 768px, es decir, desde móviles grandes hasta tablets pequeñas) */
+@media screen and (max-width: 768px) and (min-width: 265px) {
+  .anuncio img {
+    width: calc(100% - (40% * ((100vw - 265px) / (768px - 265px)))); /* Transición progresiva de tamaño */
+    max-width: 300px; /* La imagen no crecerá más de 300px */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Evita errores de alineación */
+    margin: 0 auto; /* Centra la imagen */
+  }
+}
+
+/*En móviles pequeños (menos de 265px de ancho, es decir, menos de 7 cm de pantalla) */
+@media screen and (max-width: 264px) {
+  .anuncio img {
+    width: 100% !important; /* Hace que la imagen ocupe todo el ancho disponible */
+    max-width: none; /* Elimina cualquier restricción de tamaño máximo */
+    height: auto; /* Mantiene la proporción */
+  }
 }
 
 /* --------------------------------- RESPONSIVE DESIGN --------------------------------- */
@@ -188,6 +331,7 @@ p {
     flex-direction: row;
     align-items: flex-start;
     gap: 50px;
+    width: 70%;
   }
   .contenido-blog-container {
     width: 80%;
@@ -242,7 +386,7 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(33, 1, 67, 0.415);
   width: 100%;
   text-align: center;
   padding: 10px 0;
@@ -250,7 +394,7 @@ p {
 
 .titulo-cabecera h1 {
   font-family: 'Roboto', sans-serif;
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   color: white;
   margin: 0;
   font-weight: 300;
@@ -265,6 +409,22 @@ p {
   .titulo-cabecera h1 {
     font-size: 1.8rem;
   }
+  .contenido-blog img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin: 20px auto; /* Reduce el margen en móviles */
+  }
+  .indice-contenido {
+    background-color: #7018e4d3; /* Color de fondo */
+    color: #fff;
+    text-align: left;
+    padding:10px;
+
+  }
+  ol li{
+    margin-left: 20px; /* Ajusta el margen según sea necesario */
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -274,3 +434,11 @@ p {
 }
 
 
+@media screen and (max-width: 768px) {
+  .scroll-to-top {
+      background-color: #e67e22 !important; /* 🔹 Usa el color que deseas */
+      color: white !important; /* 🔹 Asegura que la flecha se vea bien */
+      width: 40px; /* 🔹 Reduce el tamaño del botón */
+      height: 40px; /* 🔹 Reduce el tamaño del botón */
+  }
+}

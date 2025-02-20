@@ -188,17 +188,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* ********************************************************************************
- * BOTÓN "REGRESAR AL INICIO"
+ * BOTÓN "REGRESAR AL INICIO EN WEB Y A ÍNDICE DE CONTENIDOS EN BLOG"
  ******************************************************************************** */
 document.addEventListener("DOMContentLoaded", function () {
-    // Crear el botón flotante
     const scrollToTopBtn = document.createElement("button");
     scrollToTopBtn.id = "scrollToTopBtn";
     scrollToTopBtn.classList.add("scroll-to-top");
     scrollToTopBtn.innerHTML = "↑";
     document.body.appendChild(scrollToTopBtn);
 
-    // Función para mostrar/ocultar el botón en función del scroll
     window.addEventListener("scroll", function () {
         if (window.scrollY > 200) {
             scrollToTopBtn.classList.add("show");
@@ -207,7 +205,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Función para regresar al inicio de la página
     scrollToTopBtn.addEventListener("click", function () {
         window.scrollTo({
             top: 0,

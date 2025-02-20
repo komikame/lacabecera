@@ -1,0 +1,31 @@
+# Habilitar RewriteEngine y permitir URLs sin .html
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)/$ $1.html [L]
+
+# Redirigir URLs antiguas a nuevas rutas
+Redirect 301 /receta-de-kichadi-plato-ayurvedico/ /blog/kichari/
+Redirect 301 /belleza-ayurveda/ /blog/belleza-ayurveda/
+Redirect 301 /masaje-ayurveda/ /blog/masaje-ayurveda/
+
+# Redirigir imágenes antiguas a su nueva ubicación
+RedirectMatch 301 ^/wp-content/uploads/(.*)$ /images/$1
+
+# Redirigir imágenes antiguas a una nueva página en lugar de a otra imagen
+Redirect 301 /wp-content/uploads/2023/05/profesora-belleza-ayurveda.jpg /blog/belleza-ayurveda/
+
+# Redirigir URL indexada en Google que apuntaba a una imagen, ahora a una nueva página
+Redirect 301 /profesora-belleza-ayurveda/ /blog/curso-belleza.html
+Redirect 301 /wp-content/uploads/2020/02/profesora-belleza-ayurveda.jpg /blog/curso-belleza.html
+
+# Indicar que una imagen ya no existe (410 Gone)
+Redirect 410 /wp-content/uploads/2023/05/profesora-belleza-ayurveda.jpg
+
+# Redirigir múltiples URLs antiguas a la página principal
+Redirect 301 /pagina-antigua-1/ /
+Redirect 301 /pagina-antigua-2/ /
+Redirect 301 /articulo-viejo/ /
+
+# Redirigir URLs con .html a su versión sin .html (SEO Friendly)
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html [NC]
+RewriteRule ^ /%1/ [R=301,L]
