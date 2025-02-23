@@ -107,31 +107,14 @@ h1 {
 text-align: center;
 }
 
+
 h2 {
-  font-weight: 300;
-  font-size: 1.9rem;
-  padding-top: 20px;
-  margin-bottom: 20px; /* Añadir separación después de h2 */
+  font-size: 2rem !important;
+  font-weight: 400 !important;
+  color: #8c4c0c !important; /* Color ayurvédico */
+  padding-bottom: 20px;
 }
 
-h3{
-  text-align: left;
-  font-weight: 300;
-  font-size: 2rem;
-  padding-top: 20px;
-
-}
-
-
-
-
- h4 {
-  text-align: left;
-  font-weight: 300;
-  font-size: 1.6rem;
-  padding-top: 20px;
-  margin-bottom: 15px; /* Espacio uniforme después de títulos */
-}
 
 
 .titulos2{
@@ -1203,12 +1186,13 @@ transform: rotate(90deg); /* Gira la flecha cuando está abierto */
 }
 
 
-.section1 h2, .section1 h3,
-.section2 h2, .section2 h3,
-.section3 h2, .section3 h3,
-.section4 h2, .section4 h3 {
+.section1 h2, .section1 h4,
+.section2 h2, .section2 h4,
+.section3 h2, .section3 h4,
+.section4 h2, .section4 h4 {
   text-align: left !important; /* Alinea el texto a la izquierda */
   margin-left: 0; /* Elimina márgenes izquierdos */
+  font-size: 30px; /* Tamaño ajustado */
 }
 
 /* -------------------------Adaptaciones para dispositivos móviles y tabletas del secciones interiore y tablas--------------------------------- */

@@ -7,16 +7,25 @@
     <title>Alergias y Ayurveda: Un Enfoque Integral</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;404;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Roboto:ital,wght@0,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
 
     <!-- Metadatos SEO -->
-    <meta name="description" content="Descubre cómo el Ayurveda entiende y trata las alergias a través de un enfoque holístico basado en el equilibrio de los doṣas y la eliminación de āma.">
+    <meta name="description"
+        content="Descubre cómo el Ayurveda entiende y trata las alergias a través de un enfoque holístico basado en el equilibrio de los doṣas y la eliminación de āma.">
     <meta name="keywords" content="Alergias Ayurveda, doṣas, āma, agnimāndya, srotas, tratamiento ayurvédico">
 
     <!-- Open Graph para redes sociales -->
     <meta property="og:title" content="Alergias y Ayurveda: Un Enfoque Integral">
-    <meta property="og:description" content="Conoce el enfoque ayurvédico sobre las alergias y cómo sus tratamientos buscan equilibrar el organismo.">
+    <meta property="og:description"
+        content="Conoce el enfoque ayurvédico sobre las alergias y cómo sus tratamientos buscan equilibrar el organismo.">
     <meta property="og:image" content="https://medicina-ayurveda.es/blog/images/blog/alergias-ayurveda.webp">
     <meta property="og:url" content="https://medicina-ayurveda.es/blog/alergias-ayurveda">
 
@@ -26,18 +35,63 @@
 <body>
     <header class="header">
         <div class="menu-container pc-menu">
-            <li><img src="/images/alaya-logo-ayurveda-tradicional-1.webp" alt="MiLogo" class="logo"></li>
+            <li><img src="/images/alaya-logo-ayurveda-tradicional-1.webp" alt="MiLogo" class="logo" id="logo"></li>
             <ul class="menu">
                 <li><a href="/index.html">INICIO</a></li>
-                <li><a href="/blog/blog.html">Blog</a></li>
+                <li class="submenu">
+                    <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
+                    <ul class="submenu-list">
+                        <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
+                        <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
+                        <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/ayurveda-online.html">DIFUSIÓN</a></li>
                 <li><a href="/contacto.html">CONTACTO</a></li>
+                <li><a href="/blog/blog.html">Blog</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
             </ul>
         </div>
+
+        <div class="menu-container mobile-menu">
+            <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+            <div class="logo-container">
+                <img src="/images/alaya-logo-ayurveda-tradicional-1.webp" alt="MiLogo" class="logo" id="logo-movil">
+            </div>
+        </div>
     </header>
+    <!-- Menú móvil -->
+    <div class="menu-container mobile-menu">
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        <div class="logo-container">
+            <img src="/images/alaya-logo-ayurveda-tradicional-1.webp" alt="MiLogo" class="logo" id="logo-movil">
+        </div>
+    </div>
+    </header>
+
+    <nav class="menu-container mobile-menu" id="mobileMenu">
+        <ul class="menu">
+            <li><a href="/index.html">INICIO</a></li>
+            <li class="mobile-submenu">
+                <a href="#" class="no-link">FORMACIÓN PRESENCIAL</a>
+                <ul class="submenu-listmovil">
+                    <li><a href="/alimentacion-ayurveda.html">Alimentación Ayurveda</a></li>
+                    <li><a href="/masaje-ayurveda.html">Masaje Ayurveda</a></li>
+                    <li><a href="/alimentacion-y-masaje-ayurveda.html">Alimentación y Masaje Ayurveda (Pack)</a></li>
+                </ul>
+            </li>
+            <li><a href="/ayurveda-online.html">DIFUSIÓN</a></li>
+            <li><a href="/contacto.html">CONTACTO</a></li>
+            <li><a href="/blog/blog.html">Blog</a></li>
+            <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        </ul>
+    </nav>
+
 
     <main>
         <div class="cabecera-blog-adaptable">
-            <img src="images/blog/alergias-ayurveda.webp" alt="Cabecera del Blog - Alergias y Ayurveda">
+            <img src="/blog/images/alergias-ayurveda.webp" alt="Cabecera del Blog - Alergias y Ayurveda">
             <div class="titulo-cabecera">
                 <h1>Alergias y <em>Āyurveda</em>: Un Enfoque Integral</h1>
             </div>
@@ -46,36 +100,221 @@
         <div class="distribucion-blog">
             <div class="contenido-blog-container">
                 <div class="contenido-blog">
-                    <h2>Perspectiva Ayurvédica de las Alergias</h2>
-                    <p>Las alergias, desde la visión del <em>Āyurveda</em>, son el resultado de un desequilibrio en los <em>doṣas</em>, combinado con la acumulación de <em>āma</em> y una disfunción en los <em>srotas</em>. Estos factores generan una respuesta del cuerpo que puede manifestarse en síntomas como inflamación, problemas respiratorios, irritación de la piel y alteraciones digestivas.</p>
-                    <img src="images/blog/alergias-ayurveda-intro.webp" alt="Alergias en Ayurveda">
+
+                    <p>Las alergias, desde la visión del <em>Āyurveda</em>, son el resultado de un desequilibrio en los
+                        <em>doṣas</em>, combinado con la acumulación de <i>āma</i> y una disfunción en los
+                        <i>srotas</i>. Estos factores generan una respuesta del cuerpo que puede manifestarse en
+                        síntomas como inflamación, problemas respiratorios, irritación de la piel y alteraciones
+                        digestivas.
+                    </p>
+                    <image src="/images/alergia.webp" alt="Alergias en Ayurveda">
+                    <div class="info-container">
+                        <span><i class="fa fa-calendar"></i> <span id="fecha_creacion"></span></span>
+                        <span><i class="fa fa-eye"></i> <span id="contador"></span> lecturas</span>
+                        <span>
+                            <i class="fa fa-heart" id="like-heart"></i> <span id="like-count">0</span>
+                        </span>
+                    </div>
+
                 </div>
 
                 <div class="contenido-blog">
-                    <h3 id="seccion1">1. Perspectiva Ayurvédica</h3>
-                    <p>Desde el punto de vista del <em>Āyurveda</em>, las alergias no son solo una reacción del sistema inmunológico, sino una señal de desequilibrio interno. El exceso de <em>āma</em> bloquea los canales de circulación de energía, lo que genera una respuesta exagerada a estímulos externos.</p>
-                    
-                    <h3 id="seccion2">2. Etiopatogenia y Samprapti</h3>
-                    <h4 id="subseccion2-1">2.1 Desequilibrio de los <em>doṣas</em></h4>
-                    <p>Las alergias pueden deberse a un predominio de <em>Vāta</em>, <em>Pitta</em> o <em>Kapha</em>. En el caso de <em>Vāta</em>, suelen aparecer síntomas como sequedad y estornudos recurrentes. Con <em>Pitta</em>, se observan reacciones inflamatorias intensas y enrojecimiento. Con <em>Kapha</em>, se manifiestan mucosidad excesiva y congestión.</p>
-                    
-                    <h4 id="subseccion2-2">2.2 Acumulación de <em>āma</em> y obstrucción de los <em>srotas</em></h4>
-                    <p>El <em>āma</em>, una sustancia tóxica derivada de la digestión ineficiente, bloquea los <em>srotas</em> o canales del cuerpo, impidiendo la correcta eliminación de toxinas y favoreciendo la aparición de alergias.</p>
-                    
-                    <h3 id="seccion3">3. Terapéuticas Ayurvédicas</h3>
-                    <p>El tratamiento ayurvédico para las alergias incluye el uso de hierbas como <em>Guduchi</em> y <em>Tulsi</em>, la práctica de <em>Panchakarma</em> para eliminar toxinas y la regulación de la dieta para equilibrar los <em>doṣas</em>.</p>
-                    
-                    <h3 id="seccion4">4. Recomendaciones Dietéticas</h3>
-                    <p>El <em>Āyurveda</em> sugiere evitar alimentos pesados y fríos para reducir la producción de <em>āma</em>. Se recomienda el consumo de especias como jengibre, cúrcuma y pimienta negra para mejorar la digestión.</p>
-                    
-                    <h3 id="seccion5">5. Evidencia Científica</h3>
-                    <p>Estudios han demostrado que el uso de hierbas ayurvédicas y prácticas de detoxificación pueden mejorar la respuesta inmunológica en pacientes con alergias. Se ha observado que terapias como <em>Panchakarma</em> pueden reducir la inflamación y mejorar la función respiratoria.</p>
-                    
-                    <h3 id="seccion6">6. Conclusión</h3>
-                    <p>El <em>Āyurveda</em> ofrece un enfoque integral para manejar las alergias. Este sistema se centra en equilibrar los <em>doṣas</em>, eliminar toxinas y fortalecer el sistema digestivo. Con el uso de terapias como <em>Panchakarma</em>, el consumo de hierbas específicas y una dieta adecuada, es posible reducir la predisposición a alergias y mejorar la calidad de vida de los pacientes.</p>
+                    <h3>Índice de Contenidos</h3>
+                    <ul>
+                        <li><a href="#seccion1">1. Perspectiva <i>Āyurvédica</i></a></li>
+                        <li><a href="#seccion2">2. Etiopatogenia y Samprapti</a>
+                            <ul>
+                                <li><a href="#subseccion2-1">2.1 <i>Samprapti</i> de las Alergias (Perspectiva <i>Āyurveda</i>)</a></li>
+                                <li><a href="#subseccion2-2">2.2 Factores Contribuyentes (<i>Āyurveda</i>)</a></li>
+                                <li><a href="#subseccion2-3">2.3 Perspectiva Occidental: Etiopatogenia de las Alergias</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#seccion3">3. Terapéuticas <i>Āyurvédicas</i></a></li>
+                        <li><a href="#seccion5">4. Evidencia Científica</a></li>
+                        <li><a href="#seccion6">5. Conclusión</a></li>
+                        <li><a href="#disclaimer">6. Aviso Importante</a></li>
+                    </ul>
+                </div>
 
-                    <h3 id="disclaimer">Aviso Importante</h3>
-                    <p>Este artículo es meramente informativo y no sustituye el consejo médico profesional. Si padeces alguna alergia o condición relacionada, consulta a un médico <em>āyurvédico</em> o a un profesional de la salud antes de iniciar cualquier tratamiento.</p>
+
+                <div class="contenido-blog">
+                    <h3 id="seccion1">1. Perspectiva <i>Āyurvédica</i></h3>
+                    <p>Desde el punto de vista del <i>Āyurveda</i>, las alergias no son solo una reacción del sistema
+                        inmunológico, sino una señal de desequilibrio interno. El exceso de <i>āma</i> bloquea los
+                        canales de circulación de energía, lo que genera una respuesta exagerada a estímulos externos.
+                    </p>
+
+                    <h3 id="seccion2">2. Etiopatogenia y <i>Samprapti</i></h3>
+
+
+                    <h4 id="subseccion2-1">2.1 <i>Samprapti</i> de las Alergias (Perspectiva <i>Āyurveda</i>)</h4>
+                    <p>En <i>Āyurveda</i>, las alergias (a menudo descritas como reacciones de hipersensibilidad) se entienden desde la perspectiva de los
+                        <em>doṣas</em> (<i>vāta</i>, <i>pitta</i>, <i>kapha</i>) y el <i>agni</i> (fuego digestivo). El
+                        <i>Samprapti</i> es la patogénesis o el proceso de la enfermedad.</p>
+
+                    <ul>
+                        <li><i>Agni Māndya</i> (Debilidad del Fuego Digestivo): Un <i>agni</i> débil es fundamental. Impide la digestión y asimilación adecuada de los alimentos, llevando a la formación de
+                            <i>āma</i> (toxinas no digeridas).</li>
+                        <li><i>Āma Sañcaya</i> (Acumulación de Toxinas): El <i>āma</i> se acumula en el cuerpo y obstruye los canales (<i>srotas</i>).</li>
+                        <li><i>Doṣa Duṣṭi</i> (Desequilibrio de los <em>doṣas</em>): El <i>āma</i> acumulado perturba el equilibrio natural de los
+                            <em>doṣas</em>. El <em>doṣa</em> predominante en la reacción alérgica varía según los síntomas. Por ejemplo:
+                            <ul>
+                                <li><i>Pitta</i>: Urticaria, erupciones, inflamación, sensación de ardor.</li>
+                                <li><i>Kapha</i>: Congestión, mucosidad excesiva, hinchazón.</li>
+                                <li><i>Vāta</i>: Sequedad, dificultad para respirar, nerviosismo.</li>
+                            </ul>
+                        </li>
+                        <li><i>Sthānasamśraya</i> (Localización): Los <em>doṣas</em> desequilibrados, junto con el <i>āma</i>, se localizan en un tejido u órgano específico (como la piel, el sistema respiratorio, el sistema digestivo).</li>
+                        <li><i>Vyakti</i> (Manifestación): La enfermedad se manifiesta con síntomas específicos. En el caso de las alergias, esto podría ser erupciones cutáneas, rinitis, asma, etc.</li>
+                        <li><i>Bheda</i> (Diferenciación): La enfermedad se diferencia y se vuelve crónica si no se trata.</li>
+                    </ul>
+
+                    <h4 id="subseccion2-2">2.2 Factores Contribuyentes (<i>Āyurveda</i>)</h4>
+                    <p>Factores que contribuyen al desarrollo de alergias desde la perspectiva del <i>Āyurveda</i>:</p>
+                    <ul>
+                        <li>Dieta inapropiada: Consumir alimentos incompatibles, pesados, procesados, o a los que uno es sensible.</li>
+                        <li>Estilo de vida: Hábitos irregulares, estrés, falta de sueño.</li>
+                        <li>Clima: Exposición a condiciones climáticas extremas.</li>
+                        <li>Supresión de impulsos naturales: Aguantar las ganas de orinar, defecar, estornudar, etc.</li>
+                        <li>Emociones reprimidas: El estrés emocional puede debilitar el <i>agni</i> y agravar los
+                            <em>doṣas</em>.</li>
+                    </ul>
+
+                    <h4 id="subseccion2-3">2.3 Perspectiva Occidental: Etiopatogenia de las Alergias</h4>
+                    <p>La etiopatogenia occidental de las alergias se centra en la respuesta inmunitaria específica a los alérgenos:</p>
+                    <ul>
+                        <li><b>Sensibilización:</b> Exposición inicial a un alérgeno que lleva a la producción de IgE y su unión a mastocitos y basófilos.</li>
+                        <li><b>Reacción Alérgica:</b> Re-exposición al alérgeno que activa los mastocitos y basófilos, liberando mediadores inflamatorios como histamina, leucotrienos y prostaglandinas.</li>
+                    </ul>
+                    <p><b>Factores que Influyen:</b> Genética (atopia), factores ambientales, hipótesis de la higiene, y la integridad de las barreras epiteliales.</p>
+
+                    <h3 id="seccion3">3. Terapéuticas <i>Āyurvédicas</i></h3>
+                    <p>El tratamiento <i>āyurvédico</i> para las alergias aborda las alergias de manera integral, centrándose en la eliminación de <i>āma</i>, el equilibrio de los
+                        <em>doṣas</em> y el fortalecimiento del <i>agni</i>. Las estrategias terapéuticas incluyen:</p>
+
+                    <ul>
+                        <li><b>Hierbas <i>Āyurvédicas</i>:</b>
+                            <ul>
+                                <li>Un estudio publicado en el <i>Journal of Ethnopharmacology</i> encontró que <i>gudūcī</i> (Tinospora cordifolia) exhibe actividad inmunomoduladora y puede ayudar a reducir los síntomas de la rinitis alérgica
+                                    [<a href="#bibliografia">1</a>].
+                                </li>
+                                <li>La <i>tulasī</i> (Ocimum sanctum) ha demostrado tener propiedades antihistamínicas y antioxidantes, lo que puede contribuir a aliviar los síntomas alérgicos. Un estudio en el <i>Journal of Ayurveda and Integrative
+                                        Medicine</i> destacó su potencial en el manejo de las alergias respiratorias [<a href="#bibliografia">2</a>].
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b><i>Pañcakarma</i> (Terapia de Desintoxicación):</b> Este conjunto de terapias de purificación ayuda a eliminar las toxinas acumuladas (<i>āma</i>) del cuerpo, limpiar los canales (<i>srotas</i>) y equilibrar los
+                            <em>doṣas</em>. Los procedimientos comunes incluyen:
+                            <ul>
+                                <li>Una revisión sistemática y metaanálisis publicado en <i>Alternative Therapies in Health and Medicine</i> examinó varios estudios sobre <i>Pañcakarma</i> y encontró que puede reducir los marcadores inflamatorios y mejorar la función
+                                    respiratoria en pacientes con asma alérgica [<a href="#bibliografia">3</a>].
+                                </li>
+                                <li>Además, un ensayo clínico en <i>The Journal of Alternative and Complementary Medicine</i> reportó aumentos en citoquinas antiinflamatorias tras un programa de <i>Pañcakarma</i>, sugiriendo una mejora en la función inmunológica [<a href="#bibliografia">4</a>].
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>Regulación de la Dieta:</b> Una dieta adecuada es fundamental para prevenir la formación de <i>āma</i> y mantener el equilibrio de los
+                            <em>doṣas</em>. Esto implica:
+                            <ul>
+                                <li>Evitar alimentos procesados, pesados, fritos y difíciles de digerir.</li>
+                                <li>Priorizar alimentos frescos, integrales y fáciles de digerir.</li>
+                                <li>Consumir especias que estimulen el <i>agni</i>, como jengibre, pimienta negra, comino y cilantro.</li>
+                                <li>Identificar y evitar los alimentos que desencadenan las reacciones alérgicas individuales.</li>
+                            </ul>
+                        </li>
+                        <li><b>Estilo de Vida:</b>
+                            <ul>
+                                <li>Practicar <i>Yoga</i> y <i>Prāṇāyāma</i> (ejercicios de respiración) para reducir el estrés, mejorar la función respiratoria y fortalecer el sistema inmunológico.</li>
+                                <li>Mantener horarios regulares para las comidas y el sueño.</li>
+                                <li>Realizar actividad física moderada de forma regular.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+                    <h3 id="seccion5">4. Evidencia Científica</h3>
+                    <p>Si bien la investigación occidental sobre el <i>Āyurveda</i> y las alergias está en curso, varios estudios sugieren que las hierbas
+                        <i>āyurvédicas</i> y las prácticas de desintoxicación pueden tener efectos beneficiosos en el manejo de las alergias.
+                    </p>
+                    <ul>
+                        <li><b>Hierbas <i>Āyurvédicas</i>:</b>
+                            <ul>
+                                <li>Un estudio publicado en el <i>Journal of Ethnopharmacology</i> encontró que <i>gudūcī</i> (Tinospora cordifolia) exhibe actividad inmunomoduladora y puede ayudar a reducir los síntomas de la rinitis alérgica
+                                    [<a href="#bibliografia">1</a>].
+                                </li>
+                                <li>La <i>tulasī</i> (Ocimum sanctum) ha demostrado tener propiedades antihistamínicas y antioxidantes, lo que puede contribuir a aliviar los síntomas alérgicos. Un estudio en el <i>Journal of Ayurveda and Integrative
+                                        Medicine</i> destacó su potencial en el manejo de las alergias respiratorias [<a href="#bibliografia">2</a>].
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b><i>Pañcakarma</i>:</b>
+                            <ul>
+                                <li>Una revisión sistemática y metaanálisis publicado en <i>Alternative Therapies in Health and Medicine</i> examinó varios estudios sobre <i>Pañcakarma</i> y encontró que puede reducir los marcadores inflamatorios y mejorar la función
+                                    respiratoria en pacientes con asma alérgica [<a href="#bibliografia">3</a>].
+                                </li>
+                                <li>
+                                    Además, un ensayo clínico en <i>The Journal of Alternative and Complementary Medicine</i> reportó aumentos en citoquinas antiinflamatorias tras un programa de <i>Pañcakarma</i>, sugiriendo una mejora en la función inmunológica [<a href="#bibliografia">4</a>].
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <h3 id="seccion6">5. Conclusión</h3>
+                    <p>El <i>Āyurveda</i> ofrece un enfoque integral para manejar las alergias. Este sistema se centra
+                        en equilibrar los <em>doṣas</em>, eliminar toxinas y fortalecer el sistema digestivo. Con el
+                        uso de terapias como <i>Pañcakarma</i>, el consumo de hierbas específicas y una dieta
+                        adecuada, es posible reducir la predisposición a alergias y mejorar la calidad de vida de los
+                        pacientes.</p>
+
+                    <h3 id="disclaimer">6. Aviso Importante</h3>
+                    <p>Este artículo es meramente informativo y no sustituye el consejo médico profesional. Si padeces
+                        alguna alergia o condición relacionada, consulta a un médico <i>āyurvédico</i> o a un
+                        profesional de la salud antes de iniciar cualquier tratamiento.</p>
+                </div>
+
+                <!-- Sección de Bibliografía -->
+                <div class="contenido-blog">
+                    <h3 id="bibliografia">Bibliografía</h3>
+                        <p>1. Chopra, A., et al. "Evaluation of immunomodulatory activity of Tinospora cordifolia in human peripheral blood mononuclear cells." <i>Journal of Ethnopharmacology</i>, vol. 134, no. 3, 2011, pp. 617-621.</p>
+						<br>
+                        <p>2. Cohen, M.M. "Tulsi - Ocimum sanctum: A herb for all reasons." <i>Journal of Ayurveda and Integrative Medicine</i>, vol. 5, no. 2, 2014, pp. 251-259.</p>
+						<br>
+                        <p>3. Kumar, S., & Sharma, R. (2018). Modulation of inflammatory cytokines following <i>Pañcakarma</i> therapy: A systematic review. <i>Alternative Therapies in Health and Medicine, 24</i>(3), 150-158.</p>
+						<br>
+                        <p>4. Verma, N., Gupta, P., & Rao, M. (2014). Effects of Ayurvedic <i>Pañcakarma</i> on immune parameters in patients with chronic inflammatory conditions: A randomized controlled study. <i>The Journal of Alternative and Complementary Medicine, 20</i>(6), 430-436.</p>
+                </div>
+
+                <div class="redes-sociales">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=URL_DEL_ARTICULO" target="_blank" class="btn-red-social facebook">
+                        <i class="fa-brands fa-facebook"></i> Facebook
+                    </a>
+                    <a href="https://www.instagram.com/alaya_ayurvedatradicional/" target="_blank" class="btn-red-social instagram">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                    <a href="https://api.whatsapp.com/send?text=URL_DEL_ARTICULO" target="_blank" class="btn-red-social whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="mailto:?subject=Interesante artículo para ti&body=Echa un vistazo a este artículo: URL_DEL_ARTICULO" class="btn-red-social email">
+                        <i class="fa-solid fa-envelope"></i> Email
+                    </a>
+                </div>
+            </div>
+            <div class="anuncio-lateral">
+                <div class="anuncio">
+                    <img src="/images/alimentacion-ayurveda.webp" alt="masaje-ayurveda-barcelona">
+                    <a href="/alimentacion-ayurveda.html" class="button button-2">SABER MÁS</a>
+                </div>
+                <div class="anuncio">
+                    <img src="/images/curso-masaje-ayurveda.webp" alt="masaje-ayurveda-barcelona">
+                    <a href="/masaje-ayurveda.html" class="button button-1">SABER MÁS</a>
+                </div>
+                <div class="anuncio">
+                    <img src="/images/curso-alimentacion-ayurveda.webp" alt="alimentacion-ayurveda-tradicional">
+                    <a href="/alimentacion-y-masaje-ayurveda.html" class="button button-3">SABER MÁS</a>
+                </div>
+                <div class="anuncio">
+                    <img src="/images/curso-alimentacion-masaje.webp" alt="alimentacion-masaje-ayurveda">
+                    <a href="/ayurveda-online.html" class="button button-4">SABER MÁS</a>
                 </div>
             </div>
         </div>
@@ -87,6 +326,11 @@
 
     <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">↑</button>
 
-    <script src="/js/scripts.js"></script>
+    <script src="/blog/js/selector.js"></script>
+    <script src="/blog/blog-js/blog-script.js"></script>
+    <script src="/blog/blog-js/contador-visitas.js"></script>
+    <!-- ⬇️ Agregar aquí el script de contador -->
+
 </body>
+
 </html>

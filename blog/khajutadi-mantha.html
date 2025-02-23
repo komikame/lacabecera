@@ -113,13 +113,20 @@
   <div class="contenido-blog-container">
     <!-- Bloque de contenido blog 1: Introducción e Imagen -->
     <div class="contenido-blog">
-        <img src="images/datiles-ayurveda-remedio.webp" alt="Remdio con dátiles">
-
-      <p>
+       <p>
         El <em>Kharjuradi Mantha</em> es una preparación tradicional de la medicina <em>Āyurveda</em> utilizada desde tiempos inmemoriales para fortalecer la digestión y el metabolismo, así como para restaurar el equilibrio de los <em>doṣa</em>s. Elaborado a partir de ingredientes naturales, este mantha destaca por su capacidad para estimular el <em>Agni</em> (fuego digestivo), eliminar toxinas (<em>Āma</em>) y revitalizar el organismo.
       </p>
-    
+      <div class="info-container">
+        <span><i class="fa fa-calendar"></i> <span id="fecha_creacion"></span></span>
+        <span><i class="fa fa-eye"></i> <span id="contador"></span> lecturas</span>
+        <span>
+            <i class="fa fa-heart" id="like-heart"></i> <span id="like-count">0</span>
+        </span>
     </div>
+    <img src="images/colon-irritable-dolor.webp" alt="colon irritable">
+</div>
+
+    
     
     <!-- Bloque de contenido blog 2: Índice y Artículo -->
     <div class="contenido-blog">
@@ -137,7 +144,7 @@
           <li><a href="#fuentes">9. Fuentes Consultadas</a></li>
         </ol>
       </div>
-      
+      <article>
       <h3 id="introduccion">1. Introducción: ¿Qué es el <em>Kharjuradi Mantha</em>?</h3>
       <p>
         El <em>Kharjuradi Mantha</em> es un remedio <em>Āyurvédico</em> formulado para apoyar la digestión y el metabolismo, ayudando a equilibrar los <em>doṣa</em>s y promover la eliminación de toxinas acumuladas en el organismo. Conocido por su acción revitalizante, se utiliza para combatir la debilidad digestiva y mejorar la vitalidad general.
@@ -245,7 +252,26 @@
       <p>
         Este artículo es meramente informativo y no sustituye el consejo médico profesional. Si deseas utilizar el <em>Kharjuradi Mantha</em> para tratar alguna condición, consulta a un médico <em>Āyurvédico</em> o a un profesional de la salud.
       </p>
+      </article>
     </div>
+    <div class="redes-sociales">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=URL_DEL_ARTICULO" target="_blank"
+          class="btn-red-social facebook">
+          <i class="fa-brands fa-facebook"></i> Facebook
+      </a>
+      <a href="https://www.instagram.com/alaya_ayurvedatradicional/" target="_blank"
+          class="btn-red-social instagram">
+          <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
+      <a href="https://api.whatsapp.com/send?text=URL_DEL_ARTICULO" target="_blank"
+          class="btn-red-social whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+      </a>
+      <a href="mailto:?subject=Interesante artículo para ti&body=Echa un vistazo a este artículo: URL_DEL_ARTICULO"
+          class="btn-red-social email">
+          <i class="fa-solid fa-envelope"></i> Email
+      </a>
+  </div>
   </div>
   
   <!-- Sección derecha: Anuncios -->
@@ -260,9 +286,11 @@
     </div>
     <div class="anuncio">
       <img src="images/curso-alimentacion-ayurveda.webp" alt="alimentacion-ayurveda-tradicional">
+      <a href="/alimentacion-y-masaje-ayurveda.html" class="button button-3">SABER MÁS</a>
     </div>
     <div class="anuncio">
       <img src="images/curso-alimentacion-masaje.webp" alt="alimentacion-masaje-ayurveda">
+       <a href="/ayurveda-online.html" class="button button-4">SABER MÁS</a>
     </div>
   </div>
   <!-- Cierre de anuncio lateral -->
@@ -278,13 +306,11 @@
   <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">
     ↑
   </button>
-
-
-    <script src="/js/scripts.js"></script>
-    <script src="/js/selector.js"></script>
+  <script src="/blog/js/selector.js"></script>
+  <script src="/blog/blog-js/blog-script.js"></script>
+  <script src="/blog/blog-js/contador-visitas.js"></script>
 
 
 </body>
 
 </html>
-

@@ -9,6 +9,30 @@ header ul li {
   padding: 0;
   margin: 0;
 }
+
+/* Botones de la paginación */
+.pagination a.page-link {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 0 2px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.pagination a.page-link:hover {
+  background: #15702d;
+}
+
+.pagination a.page-link.active {
+  background: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+
 /* --------------------------------- DEFINICIONES GENERALES --------------------------------- */
 main {
   margin-top: 100px; /* Evita que el menú fijo cubra el contenido en escritorio */
@@ -133,8 +157,8 @@ h1 {
   text-align: left;
   font-weight: 300;
   font-size: 2rem;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 10px;
   margin-bottom: 15px; /* Espacio uniforme después de títulos */
 }
 
@@ -142,8 +166,12 @@ h1 {
   text-align: left;
   font-weight: 300;
   font-size: 1.6rem;
-  padding-top: 20px;
+  padding-top: 25px;
   margin-bottom: 15px; /* Espacio uniforme después de títulos */
+}
+.contenido-blog h3 + h4 {
+  padding-top: 5px; /* Reduce el espacio solo si h4 sigue a h3 */
+  margin-top: -5px; /* Reduce aun más el espacio entre ellos */
 }
 
 /* Scroll margin para navegación con anclas */
@@ -158,13 +186,14 @@ h3[id], h4[id] {
 
 /* --------------------------------- PÁRRAFOS --------------------------------- */
 p {
-  color: #0c0404;
-  font-size: 16px;
-  line-height: 1.8;
+  color: #2b2b2c;
+  font-size: 18px;
+  line-height: 1.4;
   margin-bottom: 15px;
   text-align: justify;
-  font-weight: 300;
+  font-weight: 400;
   margin-left: 0px;
+  word-spacing: -0.5px; /* Reduce el espacio entre palabras */
 }
 
 /* --------------------------------- LISTAS FUERA DE INDICE DE CONTENIDO --------------------------------- */
@@ -172,19 +201,29 @@ p {
 /* Agregar espacio arriba y mover un poco a la izquierda las listas fuera de .indice-contenido */
 /* Agregar espacio arriba, mover a la izquierda y añadir espacio debajo de listas fuera de .indice-contenido */
 
-:not(.indice-contenido) > ul {
-  margin-top: 20px; /* Espacio arriba */
-  margin-bottom: 20px; /* Espacio debajo */
-  padding-left: 20px; /* Mover un poco a la izquierda */
-  list-style-type: disc; /* Puntos normales de lista */
+.contenido-blog ul:not(.indice-contenido ul) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  list-style-type: disc;
 }
 
-/* Para listas numeradas (ol) fuera de .indice-contenido */
-:not(.indice-contenido) > ol {
-  margin-top: 20px; /* Espacio arriba */
-  margin-bottom: 20px; /* Espacio debajo */
-  padding-left: 20px; /* Mover un poco a la izquierda */
-  list-style-type: decimal; /* Números normales en listas ordenadas */
+.contenido-blog li:not(.indice-contenido li) {
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 1px;
+  padding-left: 20px;
+  list-style-type: disc;
+  word-spacing: -0.5px;
+}
+
+.contenido-blog ol:not(.indice-contenido ol) {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  list-style-type: decimal;
 }
 
 /* ----------------------------------------------Estilo del índice de contenido ------------------------*/
@@ -241,7 +280,7 @@ ol li {
 .distribucion-blog {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
   padding: 20px;
   width: 90%;
   margin: 80px auto 0 auto;
@@ -252,7 +291,7 @@ ol li {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  min-width: 65%; /* Evita que el contenido del blog sea demasiado grande */
+  min-width: 75%; /* Evita que el contenido del blog sea demasiado grande */
 }
 
 .contenido-blog {
@@ -262,7 +301,7 @@ ol li {
 .contenido-blog img {
   display: block;
   margin: 40px auto;
-  max-width: 900px;
+  max-width: 1000px;
   height: auto;
   width: 100%; /* 🔹 Se adapta al tamaño del contenedor */
 }
@@ -441,4 +480,18 @@ ol li {
       width: 40px; /* 🔹 Reduce el tamaño del botón */
       height: 40px; /* 🔹 Reduce el tamaño del botón */
   }
+}
+
+
+/*ENLACES*/
+.enlace-ayurveda {
+  color: #a10a76; /* Color ayurvédico cálido */
+  font-style: italic; /* Texto en cursiva */
+  text-decoration: none; /* Quita el subrayado predeterminado */
+  transition: color 0.3s ease-in-out; /* Suaviza el cambio de color */
+}
+
+.enlace-ayurveda:hover {
+  color: #9a5b00; /* Color más oscuro al pasar el cursor */
+  text-decoration: underline; /* Subrayado al pasar el cursor */
 }
